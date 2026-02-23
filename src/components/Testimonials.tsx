@@ -67,6 +67,11 @@ export default function Testimonials() {
     return (
         <section id="reviews" className="testimonials-section section">
             <div className="container">
+                <FadeIn>
+                    <h2 className="title-large mb-8" style={{ textAlign: 'center', fontSize: 'clamp(3rem, 5vw, 4.5rem)', marginTop: '-30px' }}>
+                        Happy Customers
+                    </h2>
+                </FadeIn>
                 <FadeIn className="testimonials-wrapper">
                     <button className="nav-btn prev" onClick={prevReview} aria-label="Previous Review">
                         <ChevronLeft size={24} />

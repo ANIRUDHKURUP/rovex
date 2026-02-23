@@ -13,14 +13,9 @@ export default function Home() {
             img: '/assets/smarthome.jpg'
         },
         {
-            title: 'AI Security & CCTV',
+            title: 'Ai Security & CCTV',
             desc: 'Invisible shields for absolute peace of mind. Military-grade encryption, AI-driven perimeter alerts, and high-definition surveillance seamlessly hidden within the architecture.',
             img: '/assets/ai camera.png'
-        },
-        {
-            title: 'Intelligent Lighting',
-            desc: 'Sculpt your environment with precision. Automated circadian sequences, dynamic scene orchestration, and architectural highlighting that feels entirely natural.',
-            img: '/assets/replace.png'
         },
         {
             title: 'Multi-room Audio',
@@ -30,7 +25,7 @@ export default function Home() {
         {
             title: 'Access Control',
             desc: 'Secure and frictionless entry management. Engineered for high-end residential and commercial estates, providing absolute control over every access point.',
-            img: '/assets/access control.jpg'
+            img: '/assets/access control.png'
         },
         {
             title: 'Digital Door Locks',
@@ -99,7 +94,7 @@ export default function Home() {
                     <FadeIn delay={0.2}>
                         <h1 className="hero-title">
                             Welcome to the <br />
-                            <span className="text-accent underline-animate">New Era of Automation</span>
+                            <span className="text-accent">New Era of Automation</span>
                         </h1>
                     </FadeIn>
                     <FadeIn delay={0.4}>
@@ -110,7 +105,10 @@ export default function Home() {
                     <FadeIn delay={0.6}>
                         <div className="hero-actions">
                             <button onClick={() => scrollTo('contact')} className="btn-primary">Book Consultation</button>
-                            <a href="https://wa.me/919995008007" target="_blank" rel="noreferrer" className="btn-secondary">
+                            <a href="https://wa.me/919995008007" target="_blank" rel="noreferrer" className="btn-secondary" style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '1rem 2rem' }}>
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.012 2C6.483 2 2 6.485 2 12.015c0 1.765.46 3.486 1.336 5L2 22l5.12-1.34A9.957 9.957 0 0012.012 22c5.527 0 10-4.484 10-10.015S17.539 2 12.012 2zm0 18.33c-1.465 0-2.903-.393-4.162-1.138l-.3-.178-3.097.813.826-3.018-.195-.31A8.288 8.288 0 013.684 12c0-4.596 3.743-8.337 8.328-8.337 4.582 0 8.321 3.74 8.321 8.337S16.594 20.33 12.012 20.33zm4.577-6.248c-.25-.125-1.485-.733-1.716-.818-.23-.083-.398-.125-.565.125-.166.25-.65 .818-.795.986-.146.167-.293.187-.543.063-2.112-1.066-3.053-2.028-3.923-3.52-.09-.153-.01-.237.115-.36.113-.114.25-.292.375-.438.125-.145.166-.25.25-.415.084-.167.043-.31-.02-.437-.064-.125-.566-1.365-.776-1.868-.204-.492-.41-.424-.565-.43-.146-.008-.313-.01-.48-.01-.167 0-.44.062-.67.31-.23.25-.88 .86-.88 2.095 0 1.235.9 2.43 1.026 2.6.126.166 1.77 2.705 4.29 3.793 1.488.643 2.112.693 2.877.585.86-.12 1.485-.606 1.693-1.192.209-.586.209-1.087.146-1.192-.063-.105-.23-.166-.48-.292z" fill="#25D366" />
+                                </svg>
                                 WhatsApp
                             </a>
                         </div>
@@ -123,7 +121,7 @@ export default function Home() {
             <section id="services" className="section services-section grid-bg">
                 <div className="container">
                     <FadeIn>
-                        <h2 className="title-large mb-8" style={{ fontSize: 'clamp(3rem, 5vw, 4.5rem)' }}>Services Provided</h2>
+                        <h2 className="title-large mb-8" style={{ fontSize: 'clamp(3rem, 5vw, 4.5rem)', textAlign: 'center' }}>Services Provided</h2>
                     </FadeIn>
                     <div className="services-list">
                         {servicesList.map((srv, idx) => (
@@ -180,12 +178,42 @@ export default function Home() {
             {/* TESTIMONIALS SECTION */}
             <Testimonials />
 
+            {/* TRUSTED BY INDUSTRY LEADERS SECTION */}
+            <section className="section bg-soft" style={{ paddingTop: '5rem', paddingBottom: '10rem' }}>
+                <div className="container">
+                    <FadeIn>
+                        <h2 className="title-medium mb-6" style={{ textAlign: 'center' }}>
+                            Trusted by <span className="text-accent">Industry Leaders</span>
+                        </h2>
+                    </FadeIn>
+                </div>
+                <div className="marquee-container mt-6">
+                    <div className="marquee-track" style={{ animationDuration: '45s' }}>
+                        {[
+                            'Nayara Energy', 'HPCL', 'Adani Gas', 'SBI', 'Jio Digital Life', 'AJIO', 'Fincare Bank', 'AFMC', 'ICICI Bank', 'Asianet', 'TCONE', 'LuLu', 'KSEB', 'Emin', 'Minar', 'RG Foods', 'Kar Jaan', 'SAG Institute', 'Co-operative College', 'Farook College', 'The Address', 'Malabar Developers', 'Indus Towers', 'Xylem', '3K Qaly', 'Cabriot', 'APS', 'Preethi', 'KDGH', 'Mesauda', 'Kurikkal Ambiente', 'The Raviz', 'LIPI', 'Yabh', 'Kevabox', 'G-TEC'
+                        ].map((client, idx) => (
+                            <div key={idx} className="brand-logo-wrap">
+                                <span className="client-text-name">{client}</span>
+                            </div>
+                        ))}
+                        {/* Duplicate for infinite effect */}
+                        {[
+                            'Nayara Energy', 'HPCL', 'Adani Gas', 'SBI', 'Jio Digital Life', 'AJIO', 'Fincare Bank', 'AFMC', 'ICICI Bank', 'Asianet', 'TCONE', 'LuLu', 'KSEB', 'Emin', 'Minar', 'RG Foods', 'Kar Jaan', 'SAG Institute', 'Co-operative College', 'Farook College', 'The Address', 'Malabar Developers', 'Indus Towers', 'Xylem', '3K Qaly', 'Cabriot', 'APS', 'Preethi', 'KDGH', 'Mesauda', 'Kurikkal Ambiente', 'The Raviz', 'LIPI', 'Yabh', 'Kevabox', 'G-TEC'
+                        ].map((client, idx) => (
+                            <div key={`dup-${idx}`} className="brand-logo-wrap">
+                                <span className="client-text-name">{client}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* 5. CONTACT SECTION */}
             <section id="contact" className="section contact-page pb-0">
                 <div className="container">
                     <FadeIn>
                         <h2 className="title-large mb-6" style={{ textAlign: 'center' }}>
-                            Partner With <span className="text-accent">Rovex</span>.
+                            Get In Touch With <span className="text-accent">Rovex</span>.
                         </h2>
                     </FadeIn>
 
@@ -248,12 +276,15 @@ export default function Home() {
             <section className="section map-section grid-bg">
                 <div className="container">
                     <FadeIn>
+                        <h2 className="title-large mb-6" style={{ textAlign: 'center', fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}>
+                            Map View
+                        </h2>
                         <div className="map-container">
                             <iframe
                                 src="https://maps.google.com/maps?q=61/11564,Second%20Floor,Fathima%20Building,S%20K%20Pottekkat%20Road,Puthiyara%20Rd,Kasaba%20Village,Kozhikode,Kerala%20673004&t=&z=15&ie=UTF8&iwloc=&output=embed"
                                 width="100%"
                                 height="100%"
-                                style={{ border: 0, filter: 'grayscale(1) invert(0.9) contrast(1.2)' }}
+                                style={{ border: 0 }}
                                 allowFullScreen={false}
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"

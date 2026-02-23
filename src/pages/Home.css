@@ -81,20 +81,6 @@
     display: inline-block;
 }
 
-.underline-animate::after {
-    content: '';
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    background-color: #E10600;
-    transition: width 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.hero-title:hover .underline-animate::after {
-    width: 100%;
-}
 
 .hero-subtitle {
     font-size: clamp(1.15rem, 2vw, 1.5rem);
@@ -338,6 +324,25 @@
 .brand-logo-wrap img:hover {
     opacity: 0.8;
 }
+
+.client-text-name {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    padding: 0.75rem 2.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    transition: all 0.4s ease;
+}
+
+.client-text-name:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent);
+}
+
 
 @keyframes marquee {
     0% {
