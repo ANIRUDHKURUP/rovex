@@ -10,26 +10,22 @@ export default function Home() {
         {
             title: 'Home Automation',
             desc: 'Complete synergistic control over your entire estate. We unify disparate systems into one seamless, elegant interface that anticipates your routine.',
-            img: '/assets/smarthome.jpg',
-            highlight: 'The Beverly Hills Estate Integration'
+            img: '/assets/smarthome.jpg'
         },
         {
             title: 'AI Security & CCTV',
             desc: 'Invisible shields for absolute peace of mind. Military-grade encryption, AI-driven perimeter alerts, and high-definition surveillance seamlessly hidden within the architecture.',
-            img: '/assets/ai camera.png',
-            highlight: 'Malibu Cliff House Security Deploy'
+            img: '/assets/ai camera.png'
         },
         {
             title: 'Intelligent Lighting',
             desc: 'Sculpt your environment with precision. Automated circadian sequences, dynamic scene orchestration, and architectural highlighting that feels entirely natural.',
-            img: '/assets/replace.png',
-            highlight: 'Manhattan Penthouse Lighting Design'
+            img: '/assets/replace.png'
         },
         {
             title: 'Multi-room Audio',
             desc: 'Acoustic perfection distributed elegantly. We engineer high-fidelity sound that fills every space flawlessly, utilizing flush-mount and invisible speaker technology.',
-            img: '/assets/multiroomaudiosystem.png',
-            highlight: 'Luxury Estate Audio Matrix'
+            img: '/assets/multiroomaudiosystem.png'
         },
         {
             title: 'Access Control',
@@ -94,16 +90,21 @@ export default function Home() {
         <main className="home">
             {/* 1. HERO SECTION */}
             <section id="home" className="hero">
-                <div className="container hero-content">
+                <div className="hero-bg-wrapper">
+                    <img src="/assets/smarthome.jpg" alt="Luxury Automation" className="hero-bg-img" />
+                    <div className="hero-bg-overlay"></div>
+                </div>
+
+                <div className="container hero-content glass-panel">
                     <FadeIn delay={0.2}>
                         <h1 className="hero-title">
                             Welcome to the <br />
-                            <span className="text-accent">New Era of Automation</span>
+                            <span className="text-accent underline-animate">New Era of Automation</span>
                         </h1>
                     </FadeIn>
                     <FadeIn delay={0.4}>
                         <p className="hero-subtitle">
-                            Automation systems designed for modern architecture and premium developments.
+                            Automation systems designed for ultra-premium developments and modern architecture.
                         </p>
                     </FadeIn>
                     <FadeIn delay={0.6}>
@@ -132,12 +133,6 @@ export default function Home() {
                                     <div className="accent-line"></div>
                                     <p className="text-body max-w-lg mt-4">{srv.desc}</p>
 
-                                    {srv.highlight && (
-                                        <div className="project-highlight mt-4">
-                                            <span className="highlight-label">Project Highlight</span>
-                                            <p>{srv.highlight}</p>
-                                        </div>
-                                    )}
                                 </div>
                                 <div className="service-image-wrap">
                                     <ParallaxImage src={srv.img} alt={srv.title} parallaxOffset={8} />
