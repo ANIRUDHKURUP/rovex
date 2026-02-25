@@ -75,13 +75,6 @@ export default function Home() {
         }
     ];
 
-    const scrollTo = (id: string) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-
     return (
         <main className="home">
             {/* 1. HERO SECTION */}
