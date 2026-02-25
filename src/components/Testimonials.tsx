@@ -37,6 +37,11 @@ export default function Testimonials() {
     // Array of reviews (we duplicate them slightly to ensure smooth infinite if needed, 
     // but 3 is enough for a standard 3-visible carousel if we wrap indices)
     const [activeIndex, setActiveIndex] = useState(1);
+    const [touchStart, setTouchStart] = useState<number | null>(null);
+    const [touchEnd, setTouchEnd] = useState<number | null>(null);
+
+    // Minimum distance required for swipe
+    const minSwipeDistance = 50;
 
     const nextReview = useCallback(() => {
         setActiveIndex((prev) => (prev + 1) % reviewsData.length);
@@ -45,6 +50,30 @@ export default function Testimonials() {
     const prevReview = useCallback(() => {
         setActiveIndex((prev) => (prev - 1 + reviewsData.length) % reviewsData.length);
     }, []);
+
+    const onTouchStart = (e: React.TouchEvent) => {
+        setTouchEnd(null);
+        setTouchStart(e.targetTouches[0].clientX);
+    };
+
+    const onTouchMove = (e: React.TouchEvent) => {
+        setTouchEnd(e.targetTouches[0].clientX);
+    };
+
+    const onTouchEndHandler = () => {
+        if (!touchStart || !touchEnd) return;
+
+        const distance = touchStart - touchEnd;
+        const isLeftSwipe = distance > minSwipeDistance;
+        const isRightSwipe = distance < -minSwipeDistance;
+
+        if (isLeftSwipe) {
+            nextReview();
+        }
+        if (isRightSwipe) {
+            prevReview();
+        }
+    };
 
     // Auto play "one after the other"
     useEffect(() => {
@@ -77,7 +106,12 @@ export default function Testimonials() {
                         <ChevronLeft size={24} />
                     </button>
 
-                    <div className="testimonials-slider">
+                    <div
+                        className="testimonials-slider"
+                        onTouchStart={onTouchStart}
+                        onTouchMove={onTouchMove}
+                        onTouchEnd={onTouchEndHandler}
+                    >
                         {reviewsData.map((review, index) => (
                             <div
                                 key={review.id}

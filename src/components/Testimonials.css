@@ -123,14 +123,29 @@
 
 @media (max-width: 768px) {
 
-    .testimonial-card.prev-slide,
+    .testimonial-card.prev-slide {
+        left: 0;
+        transform: translateX(-100%) scale(0.9);
+        opacity: 0;
+        pointer-events: none;
+    }
+
     .testimonial-card.next-slide {
+        left: 100%;
+        transform: translateX(0) scale(0.9);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .testimonial-card.hidden-slide {
+        left: 50%;
+        transform: translateX(-50%) scale(0.8);
         opacity: 0;
         pointer-events: none;
     }
 
     .testimonials-slider {
-        height: 340px;
+        height: 380px;
     }
 
     .testimonial-card {
@@ -232,12 +247,8 @@
 }
 
 @media (max-width: 768px) {
-    .nav-btn.prev {
-        left: 0px;
-    }
-
-    .nav-btn.next {
-        right: 0px;
+    .nav-btn {
+        display: none;
     }
 }
 

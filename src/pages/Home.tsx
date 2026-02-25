@@ -1,7 +1,8 @@
 import { FadeIn } from '../components/FadeIn';
 import ParallaxImage from '../components/ParallaxImage';
-import { MessageCircle, MapPin } from 'lucide-react';
+import { MessageCircle, MapPin, Home as HomeIcon, Cctv, Laptop, BellRing, Fingerprint } from 'lucide-react';
 import Testimonials from '../components/Testimonials';
+import PremiumCarousel from '../components/PremiumCarousel';
 import './Home.css';
 
 export default function Home() {
@@ -98,26 +99,105 @@ export default function Home() {
                         </h1>
                     </FadeIn>
                     <FadeIn delay={0.4}>
-                        <p className="hero-subtitle">
-                            Automation systems designed for ultra-premium developments and modern architecture.
-                        </p>
+                        <div className="expert-solution-section">
+                            <div className="expert-icons-row">
+                                <div className="expert-icon-item">
+                                    <div className="expert-icon-box">
+                                        <HomeIcon size={20} />
+                                    </div>
+                                    <span className="expert-icon-label">AUTOMATION</span>
+                                </div>
+                                <div className="expert-icon-item">
+                                    <div className="expert-icon-box">
+                                        <Cctv size={20} />
+                                    </div>
+                                    <span className="expert-icon-label">AI - CCTV</span>
+                                </div>
+                                <div className="expert-icon-item">
+                                    <div className="expert-icon-box">
+                                        <Laptop size={20} />
+                                    </div>
+                                    <span className="expert-icon-label">IT SUPPORT</span>
+                                </div>
+                                <div className="expert-icon-item">
+                                    <div className="expert-icon-box">
+                                        <BellRing size={20} />
+                                    </div>
+                                    <span className="expert-icon-label">ALARM</span>
+                                </div>
+                                <div className="expert-icon-item">
+                                    <div className="expert-icon-box">
+                                        <Fingerprint size={20} />
+                                    </div>
+                                    <span className="expert-icon-label">BIOMETRIC</span>
+                                </div>
+                            </div>
+                            <div className="expert-banner">
+                                THE COMPLETE ELV SOLUTION EXPERT
+                            </div>
+                        </div>
                     </FadeIn>
-                    <FadeIn delay={0.6}>
-                        <div className="hero-actions">
-                            <button onClick={() => scrollTo('contact')} className="btn-primary">Book Consultation</button>
-                            <a href="https://wa.me/919995008007" target="_blank" rel="noreferrer" className="btn-secondary" style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '1rem 2rem' }}>
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.012 2C6.483 2 2 6.485 2 12.015c0 1.765.46 3.486 1.336 5L2 22l5.12-1.34A9.957 9.957 0 0012.012 22c5.527 0 10-4.484 10-10.015S17.539 2 12.012 2zm0 18.33c-1.465 0-2.903-.393-4.162-1.138l-.3-.178-3.097.813.826-3.018-.195-.31A8.288 8.288 0 013.684 12c0-4.596 3.743-8.337 8.328-8.337 4.582 0 8.321 3.74 8.321 8.337S16.594 20.33 12.012 20.33zm4.577-6.248c-.25-.125-1.485-.733-1.716-.818-.23-.083-.398-.125-.565.125-.166.25-.65 .818-.795.986-.146.167-.293.187-.543.063-2.112-1.066-3.053-2.028-3.923-3.52-.09-.153-.01-.237.115-.36.113-.114.25-.292.375-.438.125-.145.166-.25.25-.415.084-.167.043-.31-.02-.437-.064-.125-.566-1.365-.776-1.868-.204-.492-.41-.424-.565-.43-.146-.008-.313-.01-.48-.01-.167 0-.44.062-.67.31-.23.25-.88 .86-.88 2.095 0 1.235.9 2.43 1.026 2.6.126.166 1.77 2.705 4.29 3.793 1.488.643 2.112.693 2.877.585.86-.12 1.485-.606 1.693-1.192.209-.586.209-1.087.146-1.192-.063-.105-.23-.166-.48-.292z" fill="#25D366" />
-                                </svg>
-                                WhatsApp
-                            </a>
+                </div>
+
+                {/* 2. PREMIUM CAROUSEL (Moved to bottom of Hero) */}
+                <div className="hero-carousel-placement">
+                    <PremiumCarousel />
+                </div>
+            </section>
+
+            {/* 3. ABOUT SECTION */}
+            <section id="about" className="section about-section">
+                <div className="container" style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
+                    <FadeIn>
+                        <h2 className="title-large mb-8 about-title">About Us</h2>
+                        <div className="about-text-container glass-panel">
+                            <p className="text-body about-text">
+                                Rovex brings the future of smart living to your doorstep. Whether upgrading your home or business, our technology puts control at your fingertips. With a focus on reliability and intelligent design, our solutions are designed for safety, comfort and peace of mind.
+                            </p>
+                            <p className="text-body about-text mt-4">
+                                In an era where technology is constantly redefining everyday life, we ensure people stay ahead—creating spaces that are safer, smarter, and seamlessly connected.
+                                <br /><br />
+                                <span className="about-highlight">Because the future isnʼt just coming itʼs here, and weʼre here to help the world embrace it.</span>
+                            </p>
                         </div>
                     </FadeIn>
                 </div>
             </section>
 
+            {/* STATS SECTION */}
+            <section className="section stats-section pb-0 pt-0">
+                <div className="container">
+                    <FadeIn delay={0.2}>
+                        <div className="stats-grid">
+                            <div className="stat-item">
+                                <div className="stat-number">
+                                    <span className="stat-digit">1000</span>
+                                    <span className="stat-plus">+</span>
+                                </div>
+                                <div className="stat-label">Successful projects</div>
+                            </div>
+                            <div className="stat-divider"></div>
+                            <div className="stat-item">
+                                <div className="stat-number">
+                                    <span className="stat-digit">50</span>
+                                    <span className="stat-plus">+</span>
+                                </div>
+                                <div className="stat-label">Brands</div>
+                            </div>
+                            <div className="stat-divider"></div>
+                            <div className="stat-item">
+                                <div className="stat-number">
+                                    <span className="stat-digit">15</span>
+                                    <span className="stat-plus red-plus">+</span>
+                                </div>
+                                <div className="stat-label">Years Excellence</div>
+                            </div>
+                        </div>
+                    </FadeIn>
+                </div>
+            </section>
 
-            {/* 3. SERVICES SECTION */}
+            {/* 4. SERVICES SECTION */}
             <section id="services" className="section services-section grid-bg">
                 <div className="container">
                     <FadeIn>

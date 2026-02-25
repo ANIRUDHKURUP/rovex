@@ -1,11 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800;900&display=swap');
+
 /* HERO SECTION */
 .hero {
     position: relative;
     height: 100vh;
-    min-height: 700px;
+    min-height: 850px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 12vh;
     overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 90px;
+    }
+
+    .hero-content {
+        padding-top: 0 !important;
+    }
 }
 
 .hero-bg-wrapper {
@@ -50,6 +64,10 @@
     max-width: 900px;
     width: 100%;
     padding: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .glass-panel {
@@ -63,9 +81,10 @@
 }
 
 .hero-title {
+    font-family: 'Inter', sans-serif;
     font-size: clamp(3.5rem, 8vw, 6rem);
-    font-weight: 700;
-    letter-spacing: -0.04em;
+    font-weight: 900;
+    letter-spacing: -0.05em;
     line-height: 1.05;
     margin-bottom: 1.5rem;
     color: var(--text-primary);
@@ -85,7 +104,7 @@
 .hero-subtitle {
     font-size: clamp(1.15rem, 2vw, 1.5rem);
     color: var(--text-secondary);
-    margin-bottom: 3rem;
+    margin: 0 auto 3rem auto;
     font-weight: 400;
     line-height: 1.6;
     max-width: 650px;
@@ -95,6 +114,99 @@
     display: flex;
     gap: 1.5rem;
     align-items: center;
+    justify-content: center;
+}
+
+/* EXPERT SOLUTION SECTION */
+.expert-solution-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.expert-icons-row {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.expert-icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.expert-icon-box {
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.expert-icon-item:hover .expert-icon-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+    transform: translateY(-2px);
+}
+
+.expert-icon-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.expert-banner {
+    background-color: #E10600;
+    color: #fff;
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    padding: 0.4rem 1.5rem;
+    border-radius: 6px;
+    width: 100%;
+    text-align: center;
+    max-width: 500px;
+    margin-top: 0.5rem;
+    box-shadow: 0 10px 20px rgba(225, 6, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .expert-icons-row {
+        gap: 1rem;
+        margin-top: 30px;
+    }
+
+    .expert-icon-box {
+        width: 45px;
+        height: 45px;
+    }
+
+    .expert-icon-box svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .expert-icon-label {
+        font-size: 0.55rem;
+    }
+
+    .expert-banner {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+        margin-top: 38px;
+    }
 }
 
 .max-w-lg {
@@ -113,6 +225,20 @@
     margin-top: 2rem;
 }
 
+.hero-carousel-placement {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+@media (max-width: 768px) {
+    .hero-carousel-placement {
+        bottom: -40px;
+    }
+}
+
 .mt-6 {
     margin-top: 4rem;
 }
@@ -129,6 +255,154 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+}
+
+/* ABOUT SECTION */
+.about-section {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+.about-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.5rem, 6vw, 4rem) !important;
+}
+
+.about-text-container {
+    padding: 3.5rem;
+    border-radius: 24px;
+    background: linear-gradient(145deg, rgba(20, 20, 20, 0.5) 0%, rgba(10, 10, 10, 0.4) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-text {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.about-highlight {
+    font-size: 1.35rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #FFFFFF 0%, #E10600 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+@media (max-width: 768px) {
+    .about-text-container {
+        padding: 2rem;
+    }
+
+    .about-text {
+        font-size: 1.1rem;
+    }
+
+    .about-highlight {
+        font-size: 1.2rem;
+    }
+}
+
+/* STATS SECTION */
+.stats-section {
+    padding-bottom: 5rem;
+    position: relative;
+    z-index: 10;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2.5rem;
+    border-radius: 20px;
+    background: linear-gradient(145deg, rgba(20, 20, 20, 0.4) 0%, rgba(10, 10, 10, 0.2) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: -70px;
+}
+
+.stat-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 140px;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.stat-number {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.stat-digit {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 800;
+    color: var(--accent);
+    /* #E10600 */
+    letter-spacing: -0.05em;
+}
+
+.stat-plus {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-weight: 800;
+    color: #BDB1AE;
+    margin-left: 0.2rem;
+}
+
+.stat-plus.red-plus {
+    color: var(--accent);
+}
+
+.stat-label {
+    color: #A3A3A3;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+@media (max-width: 900px) {
+    .stats-grid {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .stat-item {
+        min-width: auto;
+    }
+
+    .stat-divider {
+        width: 80px;
+        height: 1px;
+    }
+
+    .stat-digit {
+        font-size: 2.2rem;
+    }
+
+    .stat-plus {
+        font-size: 1.6rem;
+    }
+
+    .stat-label {
+        font-size: 0.85rem;
+    }
 }
 
 /* PHILOSOPHY & ABOUT SECTION */
