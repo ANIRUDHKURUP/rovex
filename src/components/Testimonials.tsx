@@ -6,29 +6,137 @@ import { FadeIn } from './FadeIn';
 const reviewsData = [
     {
         id: 1,
-        text: "CcTV and Bio metrix installation very smart support team. Thank you arena technologies.",
-        author: "Ashish P",
+        text: "Rovex is the best home automotion company with my personal experience. Thankyou team.",
+        author: "Dinil dinesh",
         role: "Client",
-        initials: "AP",
+        initials: "DD",
         bgColor: "#8B1E40",
         textColor: "white"
     },
     {
         id: 2,
-        text: "Very nice experience and good technical support 💯",
-        author: "Vedhu",
+        text: "Home Automation, Hotel Automation, Gate Automation, Curtain Automation,",
+        author: "Danish KT",
         role: "Client",
-        initials: "VE",
+        initials: "DK",
+        bgColor: "#004B7A",
+        textColor: "white"
+    },
+    {
+        id: 3,
+        text: "Best home automation company",
+        author: "Neema Shonithlal",
+        role: "Client",
+        initials: "NS",
         bgColor: "#FFFFFF",
         textColor: "#000000"
     },
     {
-        id: 3,
-        text: "This is very good helpful service thanks for arena technologies 🏀 🙏",
-        author: "V Rao",
+        id: 4,
+        text: "Thank you team Rovex Automation for upgrading my apple imac",
+        author: "Amaan",
         role: "Client",
-        initials: "VR",
+        initials: "A",
+        bgColor: "#E10600",
+        textColor: "white"
+    },
+    {
+        id: 5,
+        text: "Highly recommended for all home automation needs.",
+        author: "Asritha P T",
+        role: "Client",
+        initials: "AP",
+        bgColor: "#121212",
+        textColor: "white"
+    },
+    {
+        id: 6,
+        text: "good service",
+        author: "Lijuraj Thuvassery",
+        role: "Client",
+        initials: "LT",
+        bgColor: "#8B1E40",
+        textColor: "white"
+    },
+    {
+        id: 7,
+        text: "Good work ..",
+        author: "anand sasidharan",
+        role: "Client",
+        initials: "AS",
+        bgColor: "#FFFFFF",
+        textColor: "#000000"
+    },
+    {
+        id: 8,
+        text: "Very professional execution and great service.",
+        author: "Safeer 07",
+        role: "Client",
+        initials: "S0",
         bgColor: "#004B7A",
+        textColor: "white"
+    },
+    {
+        id: 9,
+        text: "Premium quality work.",
+        author: "Lpcowork Legacy",
+        role: "Client",
+        initials: "LL",
+        bgColor: "#E10600",
+        textColor: "white"
+    },
+    {
+        id: 10,
+        text: "Excellent products and great support.",
+        author: "Sajin P",
+        role: "Client",
+        initials: "SP",
+        bgColor: "#8B1E40",
+        textColor: "white"
+    },
+    {
+        id: 11,
+        text: "Great experience with their automation systems.",
+        author: "ATHUL Op",
+        role: "Client",
+        initials: "AO",
+        bgColor: "#121212",
+        textColor: "white"
+    },
+    {
+        id: 12,
+        text: "Impressive service and response time.",
+        author: "Sarun K",
+        role: "Client",
+        initials: "SK",
+        bgColor: "#FFFFFF",
+        textColor: "#000000"
+    },
+    {
+        id: 13,
+        text: "Great automation options.",
+        author: "ajal k",
+        role: "Client",
+        initials: "AK",
+        bgColor: "#004B7A",
+        textColor: "white"
+    },
+    {
+        id: 14,
+        text: "Reliable team and robust technology.",
+        author: "VivekAsend Vivekpp",
+        role: "Client",
+        initials: "VV",
+        bgColor: "#8B1E40",
+        textColor: "white"
+    },
+    {
+        id: 15,
+        text: "Very nice work overall.",
+        author: "Dilsha Naduthodi",
+        role: "Client",
+        initials: "DN",
+        bgColor: "#E10600",
         textColor: "white"
     }
 ];
@@ -83,7 +191,7 @@ export default function Testimonials() {
         return () => clearInterval(timer);
     }, [nextReview]);
 
-    const reviewUrl = "https://www.google.com/search?sca_esv=185ead3f02b8375f&rlz=1C1RXQR_enIN1112IN1112&sxsrf=ANbL-n7JfwTcznQj0ZUwEUjX4wdbJbjLOQ:1771777719610&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOZz31Vh4QGtCVICOr4bt70WzVNbwoYKzshN0FrESC4oe7ISq5cVdjjJWDO0bdQdsN5-Mbvn68LqDVS2X-DWh7Vx3xs-3zkhLfGcxLLK615CjT55x7IRnMlzCycWWqMNp6pwLAzw%3D&q=Rovex+Automation+LLP+%7C+Home+Automation+Company+Reviews&sa=X&ved=2ahUKEwi1q-Sswu2SAxUH-TgGHUi8O6YQ0bkNegQIMRAH&biw=1536&bih=730&dpr=1.25";
+    const reviewUrl = "https://www.google.com/search?sca_esv=e40f04d2a6b22062&hl=en-IN&sxsrf=ANbL-n74_k_MFv9_hD8lq2RsQP6f4S1dKQ:1772121322475&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOZz31Vh4QGtCVICOr4bt70WzVNbwoYKzshN0FrESC4oe7ISq5cVdjjJWDO0bdQdsN5-Mbvn68LqDVS2X-DWh7Vx3xs-3zkhLfGcxLLK615CjT55x7IRnMlzCycWWqMNp6pwLAzw%3D&q=Rovex+Automation+LLP+%7C+Home+Automation+Company+Reviews&sa=X&ved=2ahUKEwic_bKvwveSAxUgcGwGHUwUNVYQ0bkNegQILRAH&biw=1540&bih=742&dpr=1.25";
 
     const getPositionClass = (index: number) => {
         const diff = (index - activeIndex + reviewsData.length) % reviewsData.length;

@@ -57,6 +57,38 @@
     border: none;
     color: var(--text-primary);
     cursor: pointer;
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.nav-mobile-btn svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -12px;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-menu {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.icon-close {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.5);
+}
+
+.nav-mobile-btn.open .icon-menu {
+    opacity: 0;
+    transform: rotate(90deg) scale(0.5);
+}
+
+.nav-mobile-btn.open .icon-close {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
 }
 
 .nav-right {
@@ -65,16 +97,43 @@
     gap: 1.5rem;
 }
 
+@keyframes jump-reminder {
+
+    0%,
+    50%,
+    100% {
+        transform: translateY(0);
+    }
+
+    10% {
+        transform: translateY(-10px);
+    }
+
+    20% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-5px);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+}
+
 .nav-whatsapp {
     display: flex;
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease, filter 0.3s ease;
+    animation: jump-reminder 3s infinite;
 }
 
 .nav-whatsapp:hover {
     transform: scale(1.1);
-    filter: drop-shadow(0 0 8px rgba(37, 211, 102, 0.6));
+    filter: drop-shadow(0 0 10px rgba(37, 211, 102, 0.8));
+    animation-play-state: paused;
 }
 
 @media (max-width: 768px) {

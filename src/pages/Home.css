@@ -467,12 +467,20 @@
 }
 
 /* Specific Typography Overrides for Service Headings */
-.services-section .title-large,
-.service-text h3.title-medium {
+.services-section .title-large {
     font-family: 'Satoshi', sans-serif;
     font-weight: 700;
     letter-spacing: -0.02em;
     line-height: 1.1;
+}
+
+.service-text h3.title-medium {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.9rem, 3vw, 2.9rem);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    white-space: nowrap;
 }
 
 .services-list {
@@ -524,6 +532,10 @@
     .service-layer.reverse {
         flex-direction: column;
         gap: 3rem;
+    }
+
+    .service-text h3.title-medium {
+        white-space: normal;
     }
 
     .service-image-wrap {

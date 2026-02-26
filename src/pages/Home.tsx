@@ -14,7 +14,7 @@ export default function Home() {
             img: '/assets/smarthome.jpg'
         },
         {
-            title: 'Ai Security & CCTV',
+            title: 'Ai-CCTV System',
             desc: 'Invisible shields for absolute peace of mind. Military-grade encryption, AI-driven perimeter alerts, and high-definition surveillance seamlessly hidden within the architecture.',
             img: '/assets/ai camera.png'
         },
@@ -49,12 +49,12 @@ export default function Home() {
             img: '/assets/intrusion alarm.png'
         },
         {
-            title: 'Networking & Wi-Fi',
+            title: 'Networking and Wi-Fi',
             desc: 'Enterprise-grade connectivity networks. Invisible, ultra-high-speed data backbones designed to support intense automation architectures without lag.',
             img: '/assets/networking and wifi.png'
         },
         {
-            title: 'Curtain & Blinds Automation',
+            title: 'Curtain and Blinds Automation',
             desc: 'Motorized window treatments. Silent and synchronized shading systems that adjust perfectly to circadian rhythms and structural lighting needs.',
             img: '/assets/curtain and blinds automation.png'
         },
@@ -218,7 +218,7 @@ export default function Home() {
             <section id="brands" className="section brands-section">
                 <div className="container">
                     <FadeIn>
-                        <h2 className="title-medium mb-6" style={{ textAlign: 'center' }}>BRANDS PROVIDED</h2>
+                        <h2 className="title-large mb-8" style={{ textAlign: 'center', fontSize: 'clamp(3rem, 5vw, 4.5rem)' }}>Brands Provided</h2>
                     </FadeIn>
                 </div>
                 <div className="marquee-container mt-6">
