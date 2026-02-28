@@ -354,7 +354,7 @@ export default function Home() {
                         </h2>
                         <div className="map-container">
                             <iframe
-                                src="https://maps.google.com/maps?q=61/11564,Second%20Floor,Fathima%20Building,S%20K%20Pottekkat%20Road,Puthiyara%20Rd,Kasaba%20Village,Kozhikode,Kerala%20673004&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                src="https://maps.google.com/maps?q=Rovex%20Automation%20LLP%20%7C%20Home%20Automation%20Company%2C%2061%2F%2011564%20%2C%20Second%20Floor%20%2C%20Fathima%20Building%20S%20K%20Pottekkat%20Road%2C%20Puthiyara%20Rd%2C%20Kasaba%20Village%2C%20Kozhikode%2C%20Kerala%20673004&t=&z=15&ie=UTF8&iwloc=&output=embed"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}

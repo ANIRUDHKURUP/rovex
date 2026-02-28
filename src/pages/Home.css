@@ -14,11 +14,12 @@
 
 @media (max-width: 768px) {
     .hero {
-        padding-top: 90px;
+        padding-top: 110px;
     }
 
     .hero-content {
         padding-top: 0 !important;
+        margin-top: 40px;
     }
 }
 
@@ -82,7 +83,7 @@
 
 .hero-title {
     font-family: 'Inter', sans-serif;
-    font-size: clamp(3.5rem, 8vw, 6rem);
+    font-size: clamp(3rem, 7vw, 5.2rem);
     font-weight: 900;
     letter-spacing: -0.05em;
     line-height: 1.05;
@@ -170,14 +171,14 @@
 .expert-banner {
     background-color: #E10600;
     color: #fff;
-    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-size: clamp(0.85rem, 1.5vw, 1.15rem);
     font-weight: 800;
     letter-spacing: 0.02em;
-    padding: 0.4rem 1.5rem;
+    padding: 0.3rem 1.2rem;
     border-radius: 6px;
     width: 100%;
     text-align: center;
-    max-width: 500px;
+    max-width: 420px;
     margin-top: 0.5rem;
     box-shadow: 0 10px 20px rgba(225, 6, 0, 0.3);
 }
@@ -189,22 +190,22 @@
     }
 
     .expert-icon-box {
-        width: 45px;
-        height: 45px;
+        width: 36px;
+        height: 36px;
     }
 
     .expert-icon-box svg {
-        width: 18px;
-        height: 18px;
+        width: 14px;
+        height: 14px;
     }
 
     .expert-icon-label {
-        font-size: 0.55rem;
+        font-size: 0.45rem;
     }
 
     .expert-banner {
-        padding: 0.6rem 1rem;
-        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
         margin-top: 38px;
     }
 }
