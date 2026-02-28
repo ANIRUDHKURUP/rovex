@@ -39,7 +39,7 @@ export default function Home() {
             img: '/assets/gate automation.jpg'
         },
         {
-            title: 'Video Door Phone System',
+            title: 'Video Door Phone',
             desc: 'High-definition visual intercoms. Secure two-way communication with wide-angle optics and crystal-clear audio, embedded flush into the architecture.',
             img: '/assets/video door phone system.png'
         },
@@ -54,17 +54,17 @@ export default function Home() {
             img: '/assets/networking and wifi.png'
         },
         {
-            title: 'Curtain and Blinds Automation',
+            title: 'Curtain Automation',
             desc: 'Motorized window treatments. Silent and synchronized shading systems that adjust perfectly to circadian rhythms and structural lighting needs.',
             img: '/assets/curtain and blinds automation.png'
         },
         {
-            title: 'Smart Shutter Automation',
+            title: 'Shutter Automation',
             desc: 'Industrial strength motorized security shutters. Elegant deployment with total structural integration, controlled via centralized secured systems.',
             img: '/assets/smart shutter automation.png'
         },
         {
-            title: 'Automatic Boom Barrier',
+            title: 'Boom Barrier',
             desc: 'High-speed vehicular access control. Rugged, relentless performance for premium development entryways, integrating with automatic plate recognition.',
             img: '/assets/automatic boom barrier.png'
         },

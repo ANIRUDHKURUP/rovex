@@ -143,19 +143,19 @@
 
 @media (max-width: 768px) {
     .premium-carousel-slider {
-        height: 380px;
+        height: 320px;
     }
 
     .premium-carousel-card {
-        max-width: 280px;
-        height: 160px;
-        margin-top: -10px;
-        /* Adjusted to push further upward on mobile */
+        max-width: 220px;
+        height: 130px;
+        margin-top: 20px;
+        /* Adjusted to prevent overlap with banner above */
     }
 
     .premium-carousel-card.active-slide {
-        max-width: 240px;
-        height: 340px;
+        max-width: 200px;
+        height: 280px;
     }
 
     .premium-carousel-card.prev-slide {
