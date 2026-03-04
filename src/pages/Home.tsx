@@ -262,7 +262,7 @@ export default function Home() {
                 </div>
                 <div className="logo-grid mt-6">
                     {[
-                        'adani.png', 'ajio.png', 'aps.jpg', 'arabiann.jpg', 'asianet.png', 'cabriotn.png', 'cmc.jpg', 'co-operative.png', 'emin.png', 'farook.png', 'fincare.png', 'hp.png', 'icici.png', 'kaalyn.png', 'karadan.png', 'kdch.jpg', 'kevabox.jpg', 'ksebn.png', 'kurikkaln.png', 'lipin.png', 'lulu.png', 'm-dit.png', 'meraldan.png', 'minar.png', 'nayara.png', 'peekeyn.png', 'preethi.jpg', 'rg.png', 'safi.png', 'tc-onen.png', 'tec.png', 'the raviz.png', 'theaddress.jpg', 'xylem.jpg', 'yashn.png', 'sbin.png'
+                        'adani.png', 'ajion.png', 'aps.jpg', 'arabiann.jpg', 'asianet.png', 'cabriotn.png', 'cmc.jpg', 'co-operative.png', 'emin.png', 'farook.png', 'fincare.png', 'hp.png', 'icici.png', 'kaalyn.png', 'karadan.png', 'kdch.jpg', 'kevabox.jpg', 'ksebn.png', 'kurikkaln.png', 'lipin.png', 'lulu.png', 'm-dit.png', 'meraldan.png', 'minar.png', 'nayara.png', 'peekeyn.png', 'preethi.jpg', 'rg.png', 'safi.png', 'tc-onen.png', 'tec.png', 'the raviz.png', 'theaddress.jpg', 'xylem.jpg', 'yashn.png', 'sbin.png'
                     ].map((logo, idx) => (
                         <div key={idx} className="brand-logo-wrap leader-card">
                             <img
