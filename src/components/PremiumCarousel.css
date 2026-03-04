@@ -79,10 +79,8 @@
     opacity: 1;
     border-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9);
-    max-width: 260px;
-    /* Shrunk from 320px */
-    height: 360px;
-    /* Shrunk from 440px */
+    max-width: 400px;
+    height: 250px;
 }
 
 .premium-carousel-card.prev-slide {
@@ -154,8 +152,8 @@
     }
 
     .premium-carousel-card.active-slide {
-        max-width: 200px;
-        height: 280px;
+        max-width: 280px;
+        height: 170px;
     }
 
     .premium-carousel-card.prev-slide {

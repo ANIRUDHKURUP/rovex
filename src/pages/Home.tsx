@@ -19,6 +19,11 @@ export default function Home() {
             img: '/assets/ai camera.png'
         },
         {
+            title: 'Intrusion Alarms',
+            desc: 'Proactive, multi-tiered perimeter defense. Sophisticated sensors and instantaneous alerts engineered to neutralize threats before they materialize.',
+            img: '/assets/intrusion alarm.png'
+        },
+        {
             title: 'Multi-room Audio',
             desc: 'Acoustic perfection distributed elegantly. We engineer high-fidelity sound that fills every space flawlessly, utilizing flush-mount and invisible speaker technology.',
             img: '/assets/multiroomaudiosystem.png'
@@ -42,11 +47,6 @@ export default function Home() {
             title: 'Video Door Phone',
             desc: 'High-definition visual intercoms. Secure two-way communication with wide-angle optics and crystal-clear audio, embedded flush into the architecture.',
             img: '/assets/video door phone system.png'
-        },
-        {
-            title: 'Intrusion Alarms',
-            desc: 'Proactive, multi-tiered perimeter defense. Sophisticated sensors and instantaneous alerts engineered to neutralize threats before they materialize.',
-            img: '/assets/intrusion alarm.png'
         },
         {
             title: 'Networking and Wi-Fi',
@@ -260,24 +260,36 @@ export default function Home() {
                         </h2>
                     </FadeIn>
                 </div>
-                <div className="marquee-container mt-6">
-                    <div className="marquee-track" style={{ animationDuration: '45s' }}>
-                        {[
-                            'Nayara Energy', 'HPCL', 'Adani Gas', 'SBI', 'Jio Digital Life', 'AJIO', 'Fincare Bank', 'AFMC', 'ICICI Bank', 'Asianet', 'TCONE', 'LuLu', 'KSEB', 'Emin', 'Minar', 'RG Foods', 'Kar Jaan', 'SAG Institute', 'Co-operative College', 'Farook College', 'The Address', 'Malabar Developers', 'Indus Towers', 'Xylem', '3K Qaly', 'Cabriot', 'APS', 'Preethi', 'KDGH', 'Mesauda', 'Kurikkal Ambiente', 'The Raviz', 'LIPI', 'Yabh', 'Kevabox', 'G-TEC'
-                        ].map((client, idx) => (
-                            <div key={idx} className="brand-logo-wrap">
-                                <span className="client-text-name">{client}</span>
-                            </div>
-                        ))}
-                        {/* Duplicate for infinite effect */}
-                        {[
-                            'Nayara Energy', 'HPCL', 'Adani Gas', 'SBI', 'Jio Digital Life', 'AJIO', 'Fincare Bank', 'AFMC', 'ICICI Bank', 'Asianet', 'TCONE', 'LuLu', 'KSEB', 'Emin', 'Minar', 'RG Foods', 'Kar Jaan', 'SAG Institute', 'Co-operative College', 'Farook College', 'The Address', 'Malabar Developers', 'Indus Towers', 'Xylem', '3K Qaly', 'Cabriot', 'APS', 'Preethi', 'KDGH', 'Mesauda', 'Kurikkal Ambiente', 'The Raviz', 'LIPI', 'Yabh', 'Kevabox', 'G-TEC'
-                        ].map((client, idx) => (
-                            <div key={`dup-${idx}`} className="brand-logo-wrap">
-                                <span className="client-text-name">{client}</span>
-                            </div>
-                        ))}
-                    </div>
+                <div className="logo-grid mt-6">
+                    {[
+                        'adani.png', 'ajio.png', 'aps.jpg', 'arabiann.jpg', 'asianet.png', 'cabriotn.png', 'cmc.jpg', 'co-operative.png', 'emin.png', 'farook.png', 'fincare.png', 'hp.png', 'icici.png', 'kaalyn.png', 'karadan.png', 'kdch.jpg', 'kevabox.jpg', 'ksebn.png', 'kurikkaln.png', 'lipin.png', 'lulu.png', 'm-dit.png', 'meraldan.png', 'minar.png', 'nayara.png', 'peekeyn.png', 'preethi.jpg', 'rg.png', 'safi.png', 'tc-onen.png', 'tec.png', 'the raviz.png', 'theaddress.jpg', 'xylem.jpg', 'yashn.png', 'sbin.png'
+                    ].map((logo, idx) => (
+                        <div key={idx} className="brand-logo-wrap leader-card">
+                            <img
+                                src={`/leaders/${logo}`}
+                                alt="Industry Leader"
+                                loading="lazy"
+                                style={
+                                    logo === 'kurikkaln.png' ? { transform: 'scale(1.7)' } :
+                                        logo === 'lipin.png' ? { transform: 'scale(1.8)' } :
+                                            logo === 'yashn.png' ? { transform: 'scale(1.9)' } :
+                                                logo === 'peekeyn.png' ? { transform: 'scale(1.9)' } :
+                                                    logo === 'preethi.jpg' ? { transform: 'scale(1.6)' } :
+                                                        logo === 'rg.png' ? { transform: 'scale(1.5)' } :
+                                                            logo === 'safi.png' ? { transform: 'scale(1.5)' } :
+                                                                logo === 'icici.png' ? { transform: 'scale(1.5)' } :
+                                                                    logo === 'emin.png' ? { transform: 'scale(1.5)' } :
+                                                                        logo === 'co-operative.png' ? { transform: 'scale(1.5)' } :
+                                                                            logo === 'farook.png' ? { transform: 'scale(1.5)' } :
+                                                                                logo === 'fincare.png' ? { transform: 'scale(1.5)' } :
+                                                                                    logo === 'asianet.png' ? { transform: 'scale(1.5)' } :
+                                                                                        logo === 'cabriotn.png' ? { transform: 'scale(1.5)' } :
+                                                                                            logo === 'karadan.png' ? { transform: 'scale(1.5)' } :
+                                                                                                undefined
+                                }
+                            />
+                        </div>
+                    ))}
                 </div>
             </section>
 

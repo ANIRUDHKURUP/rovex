@@ -600,10 +600,34 @@
     justify-content: center;
 }
 
+.logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.brand-logo-wrap.leader-card {
+    background-color: #ffffff;
+    width: 180px;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.brand-logo-wrap.leader-card:hover img {
+    opacity: 1;
+    /* Prevent the generic dimming effect on hover */
+}
+
 .brand-logo-wrap img {
-    height: 48px;
+    height: 38px;
     width: auto;
-    max-width: 150px;
+    max-width: 120px;
     object-fit: contain;
     transition: opacity 0.3s ease;
 }
@@ -747,5 +771,56 @@
     .btn-primary,
     .btn-secondary {
         width: 100%;
+    }
+
+    .logo-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+        /* smaller gap to fit 4 per row */
+        padding: 0 0.25rem;
+    }
+
+    .brand-logo-wrap.leader-card {
+        width: 100%;
+        /* take up 1 grid cell exactly */
+        height: auto;
+        aspect-ratio: 180 / 80;
+        border-radius: 6px;
+        /* smaller border radius on tiny screens */
+    }
+
+    .brand-logo-wrap.leader-card img {
+        max-width: 80%;
+        /* Ensure logos themselves nicely fit inside the smaller boxes safely */
+        max-height: 80%;
+    }
+
+    .brand-logo-wrap.leader-card img[src*="kurikkaln.png"] {
+        transform: scale(1.2) !important;
+    }
+
+    .brand-logo-wrap.leader-card img[src*="lipin.png"] {
+        transform: scale(1.2) !important;
+    }
+
+    .brand-logo-wrap.leader-card img[src*="peekeyn.png"] {
+        transform: scale(1.2) !important;
+    }
+
+    .brand-logo-wrap.leader-card img[src*="preethi.jpg"] {
+        transform: scale(1.2) !important;
+    }
+
+    .brand-logo-wrap.leader-card img[src*="tec.png"] {
+        transform: scale(1.2) !important;
+    }
+
+    .brand-logo-wrap.leader-card img[src*="yashn.png"] {
+        transform: scale(1.2) !important;
+    }
+
+    .brand-logo-wrap.leader-card img[src*="farook.png"] {
+        transform: scale(1.2) !important;
     }
 }
