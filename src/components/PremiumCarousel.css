@@ -162,6 +162,11 @@
 }
 
 @media (max-width: 768px) {
+    .premium-carousel-wrapper {
+        overflow: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+
     .premium-carousel-slider {
         height: 320px;
     }
@@ -173,10 +178,14 @@
         /* Adjusted to prevent overlap with banner above */
         --scale: 0.78;
         /* equivalent to roughly 220 / 280 = 0.78 */
+        transition-duration: 0.5s;
+        /* Faster, smoother perception */
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
     }
 
     .premium-carousel-card.active-slide {
         --scale: 1;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
     }
 
     .premium-carousel-card.prev-slide {
@@ -187,6 +196,8 @@
         opacity: 0.5;
         z-index: 2;
         pointer-events: auto;
+        filter: none;
+        /* Disable expensive blurs on mobile */
     }
 
     .premium-carousel-card.next-slide {
@@ -197,6 +208,8 @@
         opacity: 0.5;
         z-index: 2;
         pointer-events: auto;
+        filter: none;
+        /* Disable expensive blurs on mobile */
     }
 
     .premium-carousel-card.prev-prev-slide,

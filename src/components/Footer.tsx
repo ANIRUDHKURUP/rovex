@@ -14,7 +14,7 @@ export default function Footer() {
             <div className="container">
                 <div className="footer-top">
                     <div className="footer-brand">
-                        <img src="/assets/whitelogo.png" alt="Rovex Automation" className="footer-logo-img" />
+                        <img src="/assets/whitelogo.png" alt="Rovex Automation" className="footer-logo-img" loading="lazy" />
                         <p>Engineering Intelligent Living. <br />Designed for modern architecture.</p>
                     </div>
                     <div className="footer-links-grid">

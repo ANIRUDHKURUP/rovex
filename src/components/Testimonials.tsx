@@ -231,15 +231,19 @@ export default function Testimonials() {
                         onTouchEnd={onTouchEndHandler}
                     >
                         {reviewsData.map((review, index) => {
+                            const diff = (index - activeIndex + reviewsData.length) % reviewsData.length;
+                            // Pre-render the active, next, next-next, prev, and prev-prev cards only.
+                            // The rest are strictly unmounted to save DOM memory and repaints on mobile.
+                            const isVisible = diff === 0 || diff === 1 || diff === 2 || diff === reviewsData.length - 2 || diff === reviewsData.length - 1;
+
+                            if (!isVisible) return null;
+
                             const positionClass = getPositionClass(index);
                             return (
                                 <div
                                     key={review.id}
                                     className={`testimonial-card ${positionClass}`}
                                     onClick={() => setActiveIndex(index)}
-                                    style={{
-                                        transitionDelay: `${(index % 3) * 0.05}s`
-                                    }}
                                 >
                                     <div className="stars">
                                         {"★★★★★"}

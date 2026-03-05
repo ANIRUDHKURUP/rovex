@@ -40,6 +40,8 @@
     align-items: center;
     perspective: 1200px;
     touch-action: pan-y;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 .testimonial-card {
@@ -62,12 +64,12 @@
     --rotate-y: 0deg;
     transform: translate3d(calc(-50% + var(--x-offset)), 0, var(--z-offset)) scale(var(--scale)) rotateY(var(--rotate-y));
     will-change: transform, opacity;
-    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-        opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-        filter 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-        box-shadow 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-        background 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-        border-color 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+        background 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 
     cursor: pointer;
     height: 100%;
@@ -152,6 +154,8 @@
         /* left is 50%, so translate3d(-50% - 80vw) guarantees it moves off-screen smoothly */
         opacity: 0;
         pointer-events: none;
+        filter: none;
+        /* remove blur on mobile */
     }
 
     .testimonial-card.next-slide {
@@ -159,6 +163,8 @@
         --scale: 0.9;
         opacity: 0;
         pointer-events: none;
+        filter: none;
+        /* remove blur on mobile */
     }
 
     .testimonial-card.hidden-slide {
@@ -166,6 +172,14 @@
         --scale: 0.8;
         opacity: 0;
         pointer-events: none;
+        filter: none;
+    }
+
+    .testimonial-card.active-slide {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+        /* Reduced heavy shadow */
+        backdrop-filter: none;
+        /* Remove expensive backdrop-blur on active mobile card */
     }
 
     .testimonials-slider {
