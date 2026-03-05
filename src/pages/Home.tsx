@@ -1,9 +1,11 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, lazy, Suspense } from 'react';
 import { FadeIn } from '../components/FadeIn';
-import ParallaxImage from '../components/ParallaxImage';
 import { MessageCircle, MapPin, Home as HomeIcon, Cctv, Laptop, BellRing, Fingerprint } from 'lucide-react';
-import Testimonials from '../components/Testimonials';
-import PremiumCarousel from '../components/PremiumCarousel';
+import './Home.css';
+
+const Testimonials = lazy(() => import('../components/Testimonials'));
+const PremiumCarousel = lazy(() => import('../components/PremiumCarousel'));
+const ParallaxImage = lazy(() => import('../components/ParallaxImage'));
 import './Home.css';
 
 export default function Home() {
@@ -1593,7 +1595,9 @@ export default function Home() {
 
                 {/* 2. PREMIUM CAROUSEL (Moved to bottom of Hero) */}
                 <div className="hero-carousel-placement">
-                    <PremiumCarousel />
+                    <Suspense fallback={<div style={{ height: '320px', width: '100%' }}></div>}>
+                        <PremiumCarousel />
+                    </Suspense>
                 </div>
             </section>
 
@@ -1679,7 +1683,9 @@ export default function Home() {
                                             <p className="text-body max-w-lg mt-4">{srv.desc}</p>
                                         </div>
                                         <div className="service-image-wrap">
-                                            <ParallaxImage src={srv.img} alt={srv.title} parallaxOffset={8} />
+                                            <Suspense fallback={<div style={{ height: '100%', width: '100%', backgroundColor: '#111' }}></div>}>
+                                                <ParallaxImage src={srv.img} alt={srv.title} parallaxOffset={8} />
+                                            </Suspense>
                                         </div>
                                     </FadeIn>
                                 </div>
@@ -1724,7 +1730,9 @@ export default function Home() {
             </section>
 
             {/* TESTIMONIALS SECTION */}
-            <Testimonials />
+            <Suspense fallback={<div style={{ height: '800px', width: '100%' }}></div>}>
+                <Testimonials />
+            </Suspense>
 
             {/* TRUSTED BY INDUSTRY LEADERS SECTION */}
             <section className="section bg-soft" style={{ paddingTop: '5rem', paddingBottom: '10rem' }}>
