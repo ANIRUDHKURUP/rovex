@@ -10,67 +10,158 @@ export default function Home() {
     const servicesList = [
         {
             title: 'Home Automation',
-            desc: 'Complete synergistic control over your entire estate. We unify disparate systems into one seamless, elegant interface that anticipates your routine.',
+            desc: (
+                <>
+                    <span style={{ fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>Make life easier, one smart upgrade at a time.</span>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem', marginTop: '0.5rem', opacity: 0.9 }}>
+                        <li style={{ marginBottom: '0.5rem' }}><strong>Wireless Automation – Flexible, Smart, and Effortless:</strong> Manage everything through a central control panel or your smartphone– perfect for existing homes and easy upgrades without rewiring.</li>
+                        <li style={{ marginBottom: '0.5rem' }}><strong>Wired Automation – Stable, Reliable, and Seamless:</strong> Connects all appliances through a dedicated network, ensuring seamless operation with minimal interference– ideal for new constructions or high-end automation needs.</li>
+                        <li><strong>Presence Sensors – Intelligent, Adaptive, and Energy-Efficient:</strong> These intelligent sensors add another layer of convenience, detecting movement to automatically adjust lighting, climate, and security settings.</li>
+                    </ul>
+                </>
+            ),
             img: '/assets/smarthome.jpg'
         },
         {
             title: 'Ai-CCTV System',
-            desc: 'Invisible shields for absolute peace of mind. Military-grade encryption, AI-driven perimeter alerts, and high-definition surveillance seamlessly hidden within the architecture.',
+            desc: (
+                <>
+                    <span style={{ fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>Smarter &nbsp; Faster &nbsp; Reliable</span>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem', marginTop: '0.5rem', opacity: 0.9 }}>
+                        <li style={{ marginBottom: '0.5rem' }}><strong>24/7 Security, No Blind Spots:</strong> Our AI-powered CCTV keeps an unblinking eye on critical areas, ensuring round-the-clock protection.</li>
+                        <li style={{ marginBottom: '0.5rem' }}><strong>Instant Intrusion & Parking Alerts:</strong> Unwanted visitors? The system triggers an alarm in case of unauthorized entry attempts and activates a flashlight for unauthorized parking.</li>
+                        <li style={{ marginBottom: '0.5rem' }}><strong>AI That Never Blinks:</strong> Manual CCTV monitoring can lose focus, but not AI. It analyzes multiple video streams at once, catching every movement, pattern, and anomaly.</li>
+                        <li style={{ marginBottom: '0.5rem' }}><strong>Smart Recognition & Tracking:</strong> From counting people and identifying genders to tracking vehicles and capturing license plates, our AI system does it all—automatically logging movements for better security.</li>
+                        <li><strong>See More, Know More:</strong> Want insights into visitor traffic? Our people-counting system helps you optimize visitor management and offers real-time insights into foot traffic patterns.</li>
+                    </ul>
+                </>
+            ),
             img: '/assets/ai camera.png'
         },
         {
             title: 'Intrusion Alarms',
-            desc: 'Proactive, multi-tiered perimeter defense. Sophisticated sensors and instantaneous alerts engineered to neutralize threats before they materialize.',
+            desc: (
+                <>
+                    <span style={{ fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>Security That Thinks for You</span>
+                    Imagine a security system that not only detects threats but thinks before it reacts. Our AXHub AI-powered intrusion alarm analyzes threats before sending real-time alerts. It uses advanced AI to distinguish real dangers from harmless threats, thereby minimizing false alarms. With IVaaS (Intrusion Verification as a Service), you can remotely view live footage and take action instantly. More than just an alarm—you get a security system that's always thinking ahead.
+                </>
+            ),
             img: '/assets/intrusion alarm.png'
         },
         {
             title: 'Multi-room Audio',
-            desc: 'Acoustic perfection distributed elegantly. We engineer high-fidelity sound that fills every space flawlessly, utilizing flush-mount and invisible speaker technology.',
+            desc: (
+                <>
+                    <span style={{ fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>Music That Moves With You</span>
+                    Let your entire home echo with music, vibrant and clear. Play different music in every room, or sync them all together with just a tap—control it all from your phone. Experience music like never before, no matter where you are in your home.
+                </>
+            ),
             img: '/assets/multiroomaudiosystem.png'
         },
         {
             title: 'Access Control',
-            desc: 'Secure and frictionless entry management. Engineered for high-end residential and commercial estates, providing absolute control over every access point.',
+            desc: (
+                <>
+                    <span style={{ fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>Secure, Fast & Contactless</span>
+                    No more keycards or PIN codes. Experience the next level of security with Face Recognized Access Control, offering fast, touchless, and highly accurate authentication. It uses advanced AI to instantly identify users with high security and precision. For added protection, the system offers optional multilayer security with RFID, PIN and biometric verification, and allows you to keep record of entry and exit. Ideal for offices, residences, and high-security areas.
+                </>
+            ),
             img: '/assets/access control.png'
         },
         {
             title: 'Digital Door Locks',
-            desc: 'State-of-the-art keyless entry systems. Seamlessly designed digital locking mechanisms with biometric and encrypted remote access capabilities.',
+            desc: (
+                <>
+                    <span style={{ fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>Security Meets Innovation</span>
+                    Say good bye to keys and step into the future of home security with our AI-powered Digital Smart Door Lock. Unlock your door with Fast Fingerprint Sensor, RFID Card, PIN Code, or Face Lock. View your visitors directly through the built-in camera and display screen inside your home. Experience enhanced security with an auto-locking system and optional VDP integration for easy visitor management. The system also offers low battery indication, emergency power backup, and tracks your access history, while the fine-touch keypad and doorbell ensure convenient interaction.
+                </>
+            ),
             img: '/assets/doorlock.jpg'
         },
         {
             title: 'Gate Automation',
-            desc: 'Flawless motorized gate integrations. Silent, rapid-response automation designed to integrate seamlessly into custom architectural perimeters.',
+            desc: (
+                <>
+                    <span style={{ fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>Secure &nbsp; Convenient &nbsp; Intelligent</span>
+                    Imagine pulling up to your home and your gate opens automatically—no buttons, no waiting. Whether it's a sliding or swing gate, our advanced Gate Automation System ensures smooth, automated operation with smart access controls.<br /><br />
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem', marginTop: '0.5rem', opacity: 0.9 }}>
+                        <li style={{ marginBottom: '0.5rem' }}><strong>Multiple Access Options:</strong> Supports Face Recognition, Fingerprint, RFID, QR Code, and Password.</li>
+                        <li style={{ marginBottom: '0.5rem' }}><strong>IoT & GSM Connectivity:</strong> Lets you control and monitor your gate remotely.</li>
+                        <li style={{ marginBottom: '0.5rem' }}><strong>Enhanced Safety Features:</strong> Prevents accidents and ensures secure operation.</li>
+                        <li><strong>Reliable Power Backup:</strong> Keeps your gate functional even during power outages.</li>
+                    </ul>
+                </>
+            ),
             img: '/assets/gate automation.jpg'
         },
         {
             title: 'Video Door Phone',
-            desc: 'High-definition visual intercoms. Secure two-way communication with wide-angle optics and crystal-clear audio, embedded flush into the architecture.',
+            desc: (
+                <>
+                    <span style={{ fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>Instant Verification, Enhanced Security</span>
+                    See who's at your door from anywhere. With remote access, real-time monitoring, and two-way communication, you can greet visitors, grant access, or secure your premises effortlessly—whether you're at home, in the office, or on the go.<br /><br />
+                    Our Video Door System (VDP) is built on SIP technology, which means you get to experience crystal-clear video and audio over IP networks, enabling smooth integration with intercoms, smartphones, and security systems.
+                </>
+            ),
             img: '/assets/video door phone system.png'
         },
         {
             title: 'Networking and Wi-Fi',
-            desc: 'Enterprise-grade connectivity networks. Invisible, ultra-high-speed data backbones designed to support intense automation architectures without lag.',
+            desc: (
+                <>
+                    <span style={{ fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>Data Network & Server Room Setup</span>
+                    No downtime. No connectivity issues. Our infrastructure is expertly designed to keep your business running at peak efficiency, with high-speed connectivity, robust security, and seamless scalability for uninterrupted operations.<br /><br />
+                    <span style={{ fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>Wi-Fi System</span>
+                    Our ultra-fast, secure Wi-Fi solutions keep you connected without interruptions, offering an intelligent mesh-enabled system and Wi-Fi 6 AP for high-density environments. With centralized cloud management and intelligent monitoring, you gain complete control and real-time insights into your network.
+                </>
+            ),
             img: '/assets/networking and wifi.png'
         },
         {
             title: 'Curtain Automation',
-            desc: 'Motorized window treatments. Silent and synchronized shading systems that adjust perfectly to circadian rhythms and structural lighting needs.',
+            desc: (
+                <>
+                    <span style={{ fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>Smart, Convenient, and Effortless</span>
+                    Effortlessly adjust your curtains and blinds with the touch of a button. Our Curtain and Blinds Automation system is designed for smooth, stable operation in both manual and remote modes. With overload protection and an automatic stroke design, the system further provides safety and durability.
+                </>
+            ),
             img: '/assets/curtain and blinds automation.png'
         },
         {
             title: 'Shutter Automation',
-            desc: 'Industrial strength motorized security shutters. Elegant deployment with total structural integration, controlled via centralized secured systems.',
+            desc: (
+                <>
+                    <span style={{ fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>Secure, Efficient, and Easy to Control</span>
+                    No more struggling with manual locks or keys. Upgrade your shutters with intelligent automation and control it remotely with a key switch, Wi-Fi module, or GSM module— anytime, anywhere. Our Smart Shutter Automation is also equipped with a safety brake to prevent sudden drops and an alarm flash lamp for immediate alerts in case of unauthorized access. Smart, secure, and stress-free—that’s the future of shutter automation!
+                </>
+            ),
             img: '/assets/smart shutter automation.png'
         },
         {
             title: 'Boom Barrier',
-            desc: 'High-speed vehicular access control. Rugged, relentless performance for premium development entryways, integrating with automatic plate recognition.',
+            desc: (
+                <>
+                    <span style={{ fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>Smart, Secure, and Efficient Parking Control</span>
+                    Our Automatic Boom Barrier ensures smooth, efficient, and secure access for vehicles.<br /><br />
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem', marginTop: '0.5rem', opacity: 0.9 }}>
+                        <li style={{ marginBottom: '0.5rem' }}><strong>Multiple Access Options:</strong> Automates entry and exit, reducing congestion and improving security.</li>
+                        <li style={{ marginBottom: '0.5rem' }}><strong>Loop Detector & Signal Light:</strong> Detects vehicles accurately and provides clear visual guidance.</li>
+                        <li style={{ marginBottom: '0.5rem' }}><strong>Flash Lamp & Safety Alerts:</strong> Enhances visibility and alerts users during barrier operation.</li>
+                        <li><strong>Multiple Control Options:</strong> Operate effortlessly using a key switch, push button, or remote access.</li>
+                    </ul><br />
+                    Ideal for residential complexes, commercial buildings, toll booths, and gated communities.
+                </>
+            ),
             img: '/assets/automatic boom barrier.png'
         },
         {
             title: 'Sprinkler Automation',
-            desc: 'Intelligent landscape hydration. Weather-integrated, precise irrigation systems that maintain lush aesthetics while optimizing water consumption.',
+            desc: (
+                <>
+                    <span style={{ fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>Smart & Efficient Irrigation</span>
+                    No more over-watering or under-watering. Set watering timings, optimize water usage based on soil moisture and real-time weather, and control everything remotely through your mobile. Keep your landscape lush and healthy year round, all while saving water, time and effort.
+                </>
+            ),
             img: '/assets/sprinkler automation.png'
         }
     ];
@@ -200,7 +291,7 @@ export default function Home() {
                         {servicesList.map((srv, idx) => (
                             <FadeIn delay={0.1} key={idx} className={`service-layer ${idx % 2 !== 0 ? 'reverse' : ''}`}>
                                 <div className="service-text">
-                                    <h3 className="title-medium text-white">{srv.title}</h3>
+                                    <h3 className={`title-medium text-white ${srv.title === 'Networking and Wi-Fi' ? 'networking-title' : ''}`}>{srv.title}</h3>
                                     <div className="accent-line"></div>
                                     <p className="text-body max-w-lg mt-4">{srv.desc}</p>
 

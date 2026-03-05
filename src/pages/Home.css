@@ -539,6 +539,11 @@
         white-space: normal;
     }
 
+    .service-text h3.title-medium.networking-title {
+        white-space: nowrap;
+        font-size: clamp(1.5rem, 7.5vw, 2.9rem);
+    }
+
     .service-image-wrap {
         width: 100%;
         aspect-ratio: 16/9;
