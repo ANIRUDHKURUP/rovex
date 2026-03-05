@@ -204,9 +204,9 @@
     }
 
     .expert-banner {
-        padding: 0.4rem 0.8rem;
-        font-size: 0.75rem;
-        margin-top: 38px;
+        padding: 0.3rem 0.6rem;
+        font-size: 0.65rem;
+        margin-top: 8px;
     }
 }
 
@@ -237,6 +237,96 @@
 @media (max-width: 768px) {
     .hero-carousel-placement {
         bottom: -40px;
+    }
+}
+
+/* MOBILE SERVICES TICKER */
+.hero-services-label {
+    display: none;
+    /* hidden on desktop */
+}
+
+@media (max-width: 768px) {
+    .hero-services-label {
+        display: block !important;
+        position: absolute;
+        bottom: 395px;
+        /* placed above the ticker (which is at 335px) */
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 6;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        color: rgba(255, 255, 255, 0.7);
+        text-transform: uppercase;
+    }
+
+    .hero-services-ticker {
+        display: block;
+        position: absolute;
+        bottom: 335px;
+        /* sits above the entire carousel on mobile */
+        left: 0;
+        width: 100%;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        -webkit-overflow-scrolling: touch;
+        z-index: 6;
+        white-space: nowrap;
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+        mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+    }
+
+    .hero-services-ticker::-webkit-scrollbar {
+        display: none;
+    }
+
+    .hero-services-track {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0 5vw;
+        /* padding to ensure ends are reachable inside the mask */
+    }
+
+    .hero-services-item {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        font-size: 0.72rem;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.9);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        padding: 0.55rem 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(4px);
+        flex-shrink: 0;
+        cursor: pointer;
+        transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+        font-family: inherit;
+    }
+
+    .hero-services-item:hover {
+        background: rgba(225, 6, 0, 0.25);
+        border-color: rgba(225, 6, 0, 0.7);
+        color: #fff;
+    }
+
+    .hero-services-item:active {
+        background: rgba(225, 6, 0, 0.45);
+        transform: scale(0.96);
     }
 }
 
@@ -827,5 +917,30 @@
 
     .brand-logo-wrap.leader-card img[src*="farook.png"] {
         transform: scale(1.2) !important;
+    }
+}
+
+/* Specific Mobile Swap for Video Door Phone Section */
+@media (max-width: 768px) {
+    .vdp-mobile-swap>div:nth-child(1) {
+        order: 1;
+    }
+
+    .vdp-mobile-swap>div:nth-child(2) {
+        order: 5;
+        border-right: none !important;
+    }
+
+    .vdp-mobile-swap>div:nth-child(3) {
+        order: 3;
+    }
+
+    .vdp-mobile-swap>div:nth-child(4) {
+        order: 4;
+    }
+
+    .vdp-mobile-swap>div:nth-child(5) {
+        order: 2;
+        border-right: 1px solid rgba(255, 255, 255, 0.15) !important;
     }
 }

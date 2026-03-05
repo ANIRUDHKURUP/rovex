@@ -14,25 +14,37 @@
     justify-content: center;
     align-items: center;
     perspective: 1200px;
+    touch-action: pan-y;
 }
 
 .premium-carousel-card {
     position: absolute;
     width: 100%;
-    max-width: 320px;
-    /* Shrunk from 440px */
-    height: 200px;
-    /* Shrunk from 260px */
+    max-width: 400px;
+    /* Adjusted to maximum size */
+    height: 250px;
+    /* Adjusted to maximum size */
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.04);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: pointer;
     overflow: hidden;
     margin-top: 60px;
     /* shift further downward */
+
+    --x-offset: 0vw;
+    --z-offset: 0px;
+    --scale: 0.8;
+    --rotate-y: 0deg;
+    transform: translate3d(calc(-50% + var(--x-offset)), -50%, var(--z-offset)) scale(var(--scale)) rotateY(var(--rotate-y));
+    will-change: transform, opacity;
+    transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .premium-card-inner {
@@ -73,51 +85,61 @@
 }
 
 .premium-carousel-card.active-slide {
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    --x-offset: 0vw;
+    --z-offset: 0px;
+    --scale: 1;
+    --rotate-y: 0deg;
     z-index: 3;
     opacity: 1;
     border-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9);
-    max-width: 400px;
-    height: 250px;
 }
 
 .premium-carousel-card.prev-slide {
-    left: 25%;
-    transform: translate(-50%, -50%) translateZ(-80px) rotateY(10deg);
+    --x-offset: -25vw;
+    --z-offset: -80px;
+    --scale: 0.8;
+    --rotate-y: 10deg;
     z-index: 2;
     opacity: 0.6;
     filter: blur(1px);
 }
 
 .premium-carousel-card.next-slide {
-    left: 75%;
-    transform: translate(-50%, -50%) translateZ(-80px) rotateY(-10deg);
+    --x-offset: 25vw;
+    --z-offset: -80px;
+    --scale: 0.8;
+    --rotate-y: -10deg;
     z-index: 2;
     opacity: 0.6;
     filter: blur(1px);
 }
 
 .premium-carousel-card.prev-prev-slide {
-    left: 5%;
-    transform: translate(-50%, -50%) translateZ(-160px) rotateY(20deg);
+    --x-offset: -45vw;
+    --z-offset: -160px;
+    --scale: 0.8;
+    --rotate-y: 20deg;
     z-index: 1;
     opacity: 0.3;
     filter: blur(3px);
 }
 
 .premium-carousel-card.next-next-slide {
-    left: 95%;
-    transform: translate(-50%, -50%) translateZ(-160px) rotateY(-20deg);
+    --x-offset: 45vw;
+    --z-offset: -160px;
+    --scale: 0.8;
+    --rotate-y: -20deg;
     z-index: 1;
     opacity: 0.3;
     filter: blur(3px);
 }
 
 .premium-carousel-card.hidden-slide {
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.6) translateZ(-200px);
+    --x-offset: 0vw;
+    --z-offset: -200px;
+    --scale: 0.6;
+    --rotate-y: 0deg;
     z-index: 0;
     opacity: 0;
     pointer-events: none;
@@ -129,13 +151,13 @@
 
 @media (max-width: 1024px) {
     .premium-carousel-card.prev-slide {
-        left: 20%;
-        transform: translate(-50%, -50%) translateZ(-100px) rotateY(5deg);
+        --x-offset: -30vw;
+        --rotate-y: 5deg;
     }
 
     .premium-carousel-card.next-slide {
-        left: 80%;
-        transform: translate(-50%, -50%) translateZ(-100px) rotateY(-5deg);
+        --x-offset: 30vw;
+        --rotate-y: -5deg;
     }
 }
 
@@ -145,28 +167,33 @@
     }
 
     .premium-carousel-card {
-        max-width: 220px;
-        height: 130px;
+        max-width: 280px;
+        height: 170px;
         margin-top: 20px;
         /* Adjusted to prevent overlap with banner above */
+        --scale: 0.78;
+        /* equivalent to roughly 220 / 280 = 0.78 */
     }
 
     .premium-carousel-card.active-slide {
-        max-width: 280px;
-        height: 170px;
+        --scale: 1;
     }
 
     .premium-carousel-card.prev-slide {
-        left: 0%;
-        transform: translate(-40%, -50%) scale(0.65) translateZ(-60px) rotateY(15deg);
+        --x-offset: -50vw;
+        --scale: 0.65;
+        --z-offset: -60px;
+        --rotate-y: 15deg;
         opacity: 0.5;
         z-index: 2;
         pointer-events: auto;
     }
 
     .premium-carousel-card.next-slide {
-        left: 100%;
-        transform: translate(-60%, -50%) scale(0.65) translateZ(-60px) rotateY(-15deg);
+        --x-offset: 50vw;
+        --scale: 0.65;
+        --z-offset: -60px;
+        --rotate-y: -15deg;
         opacity: 0.5;
         z-index: 2;
         pointer-events: auto;
@@ -179,8 +206,8 @@
     }
 
     .premium-carousel-card.hidden-slide {
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0.8);
+        --x-offset: 0vw;
+        --scale: 0.8;
         opacity: 0;
         pointer-events: none;
     }

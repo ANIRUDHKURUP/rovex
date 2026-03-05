@@ -31,10 +31,20 @@ export default function PremiumCarousel() {
     }, []);
 
     useEffect(() => {
-        const timer = setInterval(() => {
-            nextImage();
-        }, 3000);
-        return () => clearInterval(timer);
+        let animationFrameId: number;
+        let lastTime = performance.now();
+
+        const loop = (currentTime: number) => {
+            if (currentTime - lastTime >= 3000) {
+                nextImage();
+                lastTime = currentTime;
+            }
+            animationFrameId = requestAnimationFrame(loop);
+        };
+
+        animationFrameId = requestAnimationFrame(loop);
+
+        return () => cancelAnimationFrame(animationFrameId);
     }, [nextImage]);
 
     const getPositionClass = (index: number) => {

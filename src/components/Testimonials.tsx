@@ -183,12 +183,22 @@ export default function Testimonials() {
         }
     };
 
-    // Auto play "one after the other"
+    // Auto play "one after the other" using requestAnimationFrame
     useEffect(() => {
-        const timer = setInterval(() => {
-            nextReview();
-        }, 4000);
-        return () => clearInterval(timer);
+        let animationFrameId: number;
+        let lastTime = performance.now();
+
+        const loop = (currentTime: number) => {
+            if (currentTime - lastTime >= 4000) {
+                nextReview();
+                lastTime = currentTime;
+            }
+            animationFrameId = requestAnimationFrame(loop);
+        };
+
+        animationFrameId = requestAnimationFrame(loop);
+
+        return () => cancelAnimationFrame(animationFrameId);
     }, [nextReview]);
 
     const reviewUrl = "https://www.google.com/search?sca_esv=e40f04d2a6b22062&hl=en-IN&sxsrf=ANbL-n74_k_MFv9_hD8lq2RsQP6f4S1dKQ:1772121322475&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOZz31Vh4QGtCVICOr4bt70WzVNbwoYKzshN0FrESC4oe7ISq5cVdjjJWDO0bdQdsN5-Mbvn68LqDVS2X-DWh7Vx3xs-3zkhLfGcxLLK615CjT55x7IRnMlzCycWWqMNp6pwLAzw%3D&q=Rovex+Automation+LLP+%7C+Home+Automation+Company+Reviews&sa=X&ved=2ahUKEwic_bKvwveSAxUgcGwGHUwUNVYQ0bkNegQILRAH&biw=1540&bih=742&dpr=1.25";
@@ -220,32 +230,38 @@ export default function Testimonials() {
                         onTouchMove={onTouchMove}
                         onTouchEnd={onTouchEndHandler}
                     >
-                        {reviewsData.map((review, index) => (
-                            <div
-                                key={review.id}
-                                className={`testimonial-card ${getPositionClass(index)}`}
-                                onClick={() => setActiveIndex(index)}
-                            >
-                                <div className="stars">
-                                    {"★★★★★"}
-                                </div>
-                                <p className="testimonial-text">
-                                    <i>{review.text}</i>
-                                </p>
-                                <div className="testimonial-author">
-                                    <div
-                                        className="avatar"
-                                        style={{ backgroundColor: review.bgColor, color: review.textColor }}
-                                    >
-                                        {review.initials}
+                        {reviewsData.map((review, index) => {
+                            const positionClass = getPositionClass(index);
+                            return (
+                                <div
+                                    key={review.id}
+                                    className={`testimonial-card ${positionClass}`}
+                                    onClick={() => setActiveIndex(index)}
+                                    style={{
+                                        transitionDelay: `${(index % 3) * 0.05}s`
+                                    }}
+                                >
+                                    <div className="stars">
+                                        {"★★★★★"}
                                     </div>
-                                    <div className="author-info">
-                                        <h4>{review.author}</h4>
-                                        <span>{review.role}</span>
+                                    <p className="testimonial-text">
+                                        <i>{review.text}</i>
+                                    </p>
+                                    <div className="testimonial-author">
+                                        <div
+                                            className="avatar"
+                                            style={{ backgroundColor: review.bgColor, color: review.textColor }}
+                                        >
+                                            {review.initials}
+                                        </div>
+                                        <div className="author-info">
+                                            <h4>{review.author}</h4>
+                                            <span>{review.role}</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        ))}
+                            );
+                        })}
                     </div>
 
                     <button className="nav-btn next" onClick={nextReview} aria-label="Next Review">
