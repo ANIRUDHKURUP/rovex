@@ -241,7 +241,6 @@
 }
 
 /* MOBILE SERVICES TICKER */
-.hero-services-ticker,
 .hero-services-label {
     display: none;
     /* hidden on desktop */
@@ -249,18 +248,20 @@
 
 @media (max-width: 768px) {
     .hero-services-label {
-        display: block;
+        display: block !important;
         position: absolute;
-        bottom: 390px;
+        bottom: 395px;
+        /* placed above the ticker (which is at 335px) */
         left: 0;
         width: 100%;
         text-align: center;
-        color: rgba(255, 255, 255, 0.6);
-        font-size: 0.75rem;
-        font-weight: 600;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
         z-index: 6;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        color: rgba(255, 255, 255, 0.7);
+        text-transform: uppercase;
     }
 
     .hero-services-ticker {

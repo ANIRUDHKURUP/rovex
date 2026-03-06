@@ -1540,7 +1540,7 @@ export default function Home() {
                     </FadeIn>
                 </div>
 
-                {/* Mobile-only services label */}
+                {/* Mobile-only services ticker label */}
                 <div className="hero-services-label">
                     Our <span style={{ color: '#ff4d4d' }}>services</span> -
                 </div>
