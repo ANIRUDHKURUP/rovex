@@ -1491,13 +1491,13 @@ export default function Home() {
                 </div>
 
                 <div className="container hero-content glass-panel">
-                    <FadeIn delay={0.2}>
-                        <h1 className="hero-title">
-                            Welcome to the <br />
-                            <span className="text-accent">Automation Expert Team</span>
+                    <FadeIn delay={0.2} className="hero-fade-wrapper">
+                        <h1 className="hero-title" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', width: '100%', margin: '0 0 1.5rem 0' }}>
+                            <span style={{ display: 'block', whiteSpace: 'nowrap', color: 'var(--text-primary)' }}>Welcome to the</span>
+                            <span className="text-accent" style={{ display: 'block', whiteSpace: 'nowrap', marginTop: '0.2rem' }}>Automation Expert Team</span>
                         </h1>
                     </FadeIn>
-                    <FadeIn delay={0.4}>
+                    <FadeIn delay={0.4} className="hero-fade-wrapper">
                         <div className="expert-solution-section">
                             <div className="expert-icons-row">
                                 <div className="expert-icon-item">
@@ -1558,6 +1558,7 @@ export default function Home() {
                             { label: 'Ai-CCTV System', id: 'service-ai-cctv' },
                             { label: 'Intrusion Alarms', id: 'service-intrusion-alarms' },
                             { label: 'Access Control', id: 'service-access-control' },
+                            { label: 'Digital Door Locks', id: 'service-digital-door-locks' },
                             { label: 'Video Door Phone', id: 'service-video-door-phone' },
                             { label: 'Gate Automation', id: 'service-gate-automation' },
                             { label: 'Networking & Wi-Fi', id: 'service-networking-wifi' },
@@ -1568,7 +1569,9 @@ export default function Home() {
                             { label: 'Home Automation', id: 'service-home-automation' },
                             { label: 'Ai-CCTV System', id: 'service-ai-cctv' },
                             { label: 'Intrusion Alarms', id: 'service-intrusion-alarms' },
+                            { label: 'Multi-room Audio', id: 'service-multiroom-audio' },
                             { label: 'Access Control', id: 'service-access-control' },
+                            { label: 'Digital Door Locks', id: 'service-digital-door-locks' },
                             { label: 'Video Door Phone', id: 'service-video-door-phone' },
                             { label: 'Gate Automation', id: 'service-gate-automation' },
                             { label: 'Networking & Wi-Fi', id: 'service-networking-wifi' },
@@ -1661,7 +1664,9 @@ export default function Home() {
                                 'Home Automation': 'service-home-automation',
                                 'Ai-CCTV System': 'service-ai-cctv',
                                 'Intrusion Alarms': 'service-intrusion-alarms',
+                                'Multi-room Audio': 'service-multiroom-audio',
                                 'Access Control': 'service-access-control',
+                                'Digital Door Locks': 'service-digital-door-locks',
                                 'Video Door Phone': 'service-video-door-phone',
                                 'Gate Automation': 'service-gate-automation',
                                 'Networking and Wi-Fi': 'service-networking-wifi',
@@ -1740,29 +1745,29 @@ export default function Home() {
                         'adani.png', 'ajion.png', 'aps.jpg', 'arabiann.jpg', 'asianet.png', 'cabriotn.png', 'cmc.jpg', 'co-operative.png', 'emin.png', 'farook.png', 'fincare.png', 'hp.png', 'icici.png', 'kaalyn.png', 'karadan.png', 'kdch.jpg', 'kevabox.jpg', 'ksebn.png', 'kurikkaln.png', 'lipin.png', 'lulu.png', 'm-dit.png', 'meraldan.png', 'minar.png', 'nayara.png', 'peekeyn.png', 'preethi.jpg', 'rg.png', 'safi.png', 'tc-onen.png', 'tec.png', 'the raviz.png', 'theaddress.jpg', 'xylem.jpg', 'yashn.png', 'sbin.png'
                     ].map((logo, idx) => (
                         <div key={idx} className="brand-logo-wrap leader-card">
-                            <img
-                                src={`/leaders/${logo}`}
-                                alt="Industry Leader"
-                                loading="lazy"
-                                style={
-                                    logo === 'kurikkaln.png' ? { transform: 'scale(1.7)' } :
-                                        logo === 'lipin.png' ? { transform: 'scale(1.8)' } :
-                                            logo === 'yashn.png' ? { transform: 'scale(1.9)' } :
-                                                logo === 'peekeyn.png' ? { transform: 'scale(1.9)' } :
-                                                    logo === 'preethi.jpg' ? { transform: 'scale(1.6)' } :
-                                                        logo === 'rg.png' ? { transform: 'scale(1.5)' } :
-                                                            logo === 'safi.png' ? { transform: 'scale(1.5)' } :
-                                                                logo === 'icici.png' ? { transform: 'scale(1.5)' } :
-                                                                    logo === 'emin.png' ? { transform: 'scale(1.5)' } :
-                                                                        logo === 'co-operative.png' ? { transform: 'scale(1.5)' } :
-                                                                            logo === 'farook.png' ? { transform: 'scale(1.5)' } :
-                                                                                logo === 'fincare.png' ? { transform: 'scale(1.5)' } :
-                                                                                    logo === 'asianet.png' ? { transform: 'scale(1.5)' } :
-                                                                                        logo === 'cabriotn.png' ? { transform: 'scale(1.5)' } :
+                                <img
+                                    src={`/leaders/${logo}`}
+                                    alt="Industry Leader"
+                                    loading="lazy"
+                                    className={logo === 'cabriotn.png' ? 'cabriotn-logo' : ''}
+                                    style={
+                                        logo === 'kurikkaln.png' ? { transform: 'scale(1.7)' } :
+                                            logo === 'lipin.png' ? { transform: 'scale(1.8)' } :
+                                                logo === 'yashn.png' ? { transform: 'scale(1.9)' } :
+                                                    logo === 'peekeyn.png' ? { transform: 'scale(1.9)' } :
+                                                        logo === 'preethi.jpg' ? { transform: 'scale(1.6)' } :
+                                                            logo === 'rg.png' ? { transform: 'scale(1.5)' } :
+                                                                logo === 'safi.png' ? { transform: 'scale(1.5)' } :
+                                                                    logo === 'icici.png' ? { transform: 'scale(1.5)' } :
+                                                                        logo === 'emin.png' ? { transform: 'scale(1.5)' } :
+                                                                            logo === 'co-operative.png' ? { transform: 'scale(1.5)' } :
+                                                                                logo === 'farook.png' ? { transform: 'scale(1.5)' } :
+                                                                                    logo === 'fincare.png' ? { transform: 'scale(1.5)' } :
+                                                                                        logo === 'asianet.png' ? { transform: 'scale(1.5)' } :
                                                                                             logo === 'karadan.png' ? { transform: 'scale(1.5)' } :
                                                                                                 undefined
-                                }
-                            />
+                                    }
+                                />
                         </div>
                     ))}
                 </div>

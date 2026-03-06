@@ -62,8 +62,8 @@
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 900px;
-    width: 100%;
+    max-width: 1400px;
+    width: 96%;
     padding: 3rem;
     text-align: center;
     display: flex;
@@ -81,13 +81,22 @@
     transform: translateY(0);
 }
 
+.hero-fade-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .hero-title {
     font-family: 'Inter', sans-serif;
-    font-size: clamp(3rem, 7vw, 5.2rem);
+    font-size: clamp(2.5rem, 6.5vw, 5rem);
     font-weight: 900;
     letter-spacing: -0.05em;
     line-height: 1.05;
     margin-bottom: 1.5rem;
+    text-align: center;
     color: var(--text-primary);
 }
 
@@ -99,6 +108,12 @@
     color: transparent;
     position: relative;
     display: inline-block;
+}
+
+@media (min-width: 1024px) {
+    .hero-title .text-accent {
+        white-space: nowrap;
+    }
 }
 
 
@@ -241,7 +256,8 @@
 }
 
 /* MOBILE SERVICES TICKER */
-.hero-services-label {
+.hero-services-label,
+.hero-services-ticker {
     display: none;
     /* hidden on desktop */
 }
@@ -725,6 +741,16 @@
     max-width: 120px;
     object-fit: contain;
     transition: opacity 0.3s ease;
+}
+
+.cabriotn-logo {
+    transform: scale(1.5);
+}
+
+@media (max-width: 600px) {
+    .cabriotn-logo {
+        transform: scale(0.9);
+    }
 }
 
 .brand-logo-wrap img:hover {
