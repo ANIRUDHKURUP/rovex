@@ -1494,7 +1494,7 @@ export default function Home() {
                     <FadeIn delay={0.2} className="hero-fade-wrapper">
                         <h1 className="hero-title" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', width: '100%', margin: '0 0 1.5rem 0' }}>
                             <span style={{ display: 'block', whiteSpace: 'nowrap', color: 'var(--text-primary)' }}>Welcome to the</span>
-                            <span className="text-accent" style={{ display: 'block', whiteSpace: 'nowrap', marginTop: '0.2rem' }}>Automation Expert Team</span>
+                            <span className="text-accent" style={{ display: 'block', whiteSpace: 'nowrap', marginTop: '0.2rem' }}>New Era of Automation</span>
                         </h1>
                     </FadeIn>
                     <FadeIn delay={0.4} className="hero-fade-wrapper">
@@ -1540,7 +1540,7 @@ export default function Home() {
 
                 {/* Mobile-only services ticker label */}
                 <div className="hero-services-label">
-                    Our <span style={{ color: '#ff4d4d' }}>services</span> -
+                    Our <span style={{ color: '#E10600' }}>services</span> -
                 </div>
 
                 {/* Mobile-only services ticker */}
@@ -1607,11 +1607,10 @@ export default function Home() {
                         <h2 className="title-large mb-8 about-title">About Us</h2>
                         <div className="about-text-container glass-panel">
                             <p className="text-body about-text">
-                                Rovex brings the future of smart living to your doorstep. Whether upgrading your home or business, our technology puts control at your fingertips. With a focus on reliability and intelligent design, our solutions are designed for safety, comfort and peace of mind.
+                                Smart spaces. Simple control.<br />
+                                Rovex creates intelligent automation solutions that make homes and businesses safer, more comfortable, and seamlessly connected.
                             </p>
                             <p className="text-body about-text mt-4">
-                                In an era where technology is constantly redefining everyday life, we ensure people stay ahead—creating spaces that are safer, smarter, and seamlessly connected.
-                                <br /><br />
                                 <span className="about-highlight">Because the future isnʼt just coming itʼs here, and weʼre here to help the world embrace it.</span>
                             </p>
                         </div>
@@ -1619,38 +1618,6 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* STATS SECTION */}
-            <section className="section stats-section pb-0 pt-0">
-                <div className="container">
-                    <FadeIn delay={0.2}>
-                        <div className="stats-grid">
-                            <div className="stat-item">
-                                <div className="stat-number">
-                                    <span className="stat-digit">1000</span>
-                                    <span className="stat-plus">+</span>
-                                </div>
-                                <div className="stat-label">Successful projects</div>
-                            </div>
-                            <div className="stat-divider"></div>
-                            <div className="stat-item">
-                                <div className="stat-number">
-                                    <span className="stat-digit">50</span>
-                                    <span className="stat-plus">+</span>
-                                </div>
-                                <div className="stat-label">Brands</div>
-                            </div>
-                            <div className="stat-divider"></div>
-                            <div className="stat-item">
-                                <div className="stat-number">
-                                    <span className="stat-digit">15</span>
-                                    <span className="stat-plus red-plus">+</span>
-                                </div>
-                                <div className="stat-label">Years Excellence</div>
-                            </div>
-                        </div>
-                    </FadeIn>
-                </div>
-            </section>
 
             {/* 4. SERVICES SECTION */}
             <section id="services" className="section services-section grid-bg">
@@ -1730,6 +1697,39 @@ export default function Home() {
 
             {/* TESTIMONIALS SECTION */}
             <Testimonials />
+
+            {/* STATS SECTION */}
+            <section className="section stats-section pb-0 pt-0">
+                <div className="container">
+                    <FadeIn delay={0.2}>
+                        <div className="stats-grid">
+                            <div className="stat-item">
+                                <div className="stat-number">
+                                    <span className="stat-digit">1000</span>
+                                    <span className="stat-plus">+</span>
+                                </div>
+                                <div className="stat-label">Successful projects</div>
+                            </div>
+                            <div className="stat-divider"></div>
+                            <div className="stat-item">
+                                <div className="stat-number">
+                                    <span className="stat-digit">50</span>
+                                    <span className="stat-plus">+</span>
+                                </div>
+                                <div className="stat-label">Brands</div>
+                            </div>
+                            <div className="stat-divider"></div>
+                            <div className="stat-item">
+                                <div className="stat-number">
+                                    <span className="stat-digit">15</span>
+                                    <span className="stat-plus red-plus">+</span>
+                                </div>
+                                <div className="stat-label">Years Excellence</div>
+                            </div>
+                        </div>
+                    </FadeIn>
+                </div>
+            </section>
 
             {/* TRUSTED BY INDUSTRY LEADERS SECTION */}
             <section className="section bg-soft" style={{ paddingTop: '5rem', paddingBottom: '10rem' }}>

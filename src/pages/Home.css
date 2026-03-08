@@ -196,12 +196,14 @@
     max-width: 420px;
     margin-top: 0.5rem;
     box-shadow: 0 10px 20px rgba(225, 6, 0, 0.3);
+    position: relative;
+    top: -10px;
 }
 
 @media (max-width: 768px) {
     .expert-icons-row {
         gap: 1rem;
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
     .expert-icon-box {
@@ -222,6 +224,30 @@
         padding: 0.3rem 0.6rem;
         font-size: 0.65rem;
         margin-top: 8px;
+    }
+}
+
+@media (max-width: 420px) {
+    .expert-icons-row {
+        gap: 0.45rem;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .expert-icon-box {
+        width: 30px;
+        height: 30px;
+    }
+
+    .expert-icon-box svg {
+        width: 13px;
+        height: 13px;
+    }
+
+    .expert-icon-label {
+        font-size: 0.38rem;
+        letter-spacing: 0.02em;
     }
 }
 
