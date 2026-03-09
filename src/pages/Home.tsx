@@ -46,7 +46,7 @@ export default function Home() {
                     <div style={{ display: 'flex', gap: '0', alignItems: 'flex-start', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
                         {/* Wireless Automation */}
                         <div style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '1rem', marginBottom: '0.2rem' }}>Wireless Automation</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '1rem', marginBottom: '0.2rem' }}>Wireless Automation</span>
                             <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>Flexible, Smart &amp; Effortless</span>
                             <div style={{ width: 80, height: 80, borderRadius: '50%', background: 'rgba(91,155,200,0.12)', border: '2px solid rgba(91,155,200,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 64 64" fill="none">
@@ -66,7 +66,7 @@ export default function Home() {
                         </div>
                         {/* Wired Automation */}
                         <div style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '1rem', marginBottom: '0.2rem' }}>Wired Automation</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '1rem', marginBottom: '0.2rem' }}>Wired Automation</span>
                             <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>Stable, Reliable &amp; Seamless</span>
                             <div style={{ width: 80, height: 80, borderRadius: '50%', background: 'rgba(91,155,200,0.12)', border: '2px solid rgba(91,155,200,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 64 64" fill="none">
@@ -89,7 +89,7 @@ export default function Home() {
                         </div>
                         {/* Presence Sensors */}
                         <div style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem' }}>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '1rem', marginBottom: '0.2rem' }}>Presence Sensors</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '1rem', marginBottom: '0.2rem' }}>Presence Sensors</span>
                             <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>Adaptive, &amp; Energy Efficient</span>
                             <div style={{ width: 80, height: 80, borderRadius: '50%', background: 'rgba(91,155,200,0.12)', border: '2px solid rgba(91,155,200,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 64 64" fill="none">
@@ -114,7 +114,7 @@ export default function Home() {
                     </div>
                 </>
             ),
-            img: '/assets/smarthome.jpg'
+            img: '/assets/smarthome.webp'
         },
         {
             title: 'Ai-CCTV System',
@@ -141,27 +141,23 @@ export default function Home() {
                                     <path d="M52 26 Q58 33 52 40" stroke="#5b9bc8" strokeWidth="1.8" fill="none" strokeLinecap="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>24/7 Monitoring</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>24/7 Monitoring</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Always watching, no blind spots.</span>
                         </div>
                         {/* Instant Alerts */}
                         <div style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
                             <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(200,80,80,0.12)', border: '2px solid rgba(200,80,80,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
-                                    {/* Alarm bell dome */}
-                                    <path d="M16 38 Q16 18 32 18 Q48 18 48 38" stroke="#c85050" strokeWidth="2.5" fill="rgba(200,80,80,0.15)" strokeLinecap="round" />
-                                    <ellipse cx="32" cy="38" rx="16" ry="5" fill="#c85050" opacity="0.4" />
-                                    <line x1="32" y1="43" x2="32" y2="48" stroke="#c85050" strokeWidth="2.5" />
-                                    <line x1="27" y1="48" x2="37" y2="48" stroke="#c85050" strokeWidth="2.5" strokeLinecap="round" />
-                                    <line x1="32" y1="18" x2="32" y2="14" stroke="#c85050" strokeWidth="2" />
-                                    {/* Flash rays */}
-                                    <line x1="20" y1="14" x2="17" y2="10" stroke="#c85050" strokeWidth="1.8" strokeLinecap="round" />
-                                    <line x1="44" y1="14" x2="47" y2="10" stroke="#c85050" strokeWidth="1.8" strokeLinecap="round" />
-                                    <line x1="14" y1="24" x2="10" y2="22" stroke="#c85050" strokeWidth="1.8" strokeLinecap="round" />
-                                    <line x1="50" y1="24" x2="54" y2="22" stroke="#c85050" strokeWidth="1.8" strokeLinecap="round" />
+                                    {/* Bell body */}
+                                    <path d="M32 16 C22 16 22 26 22 34 C22 42 16 46 16 46 L48 46 C48 46 42 42 42 34 C42 26 42 16 32 16 Z" stroke="#c85050" strokeWidth="2.5" fill="rgba(200,80,80,0.15)" strokeLinejoin="round" />
+                                    {/* Clapper */}
+                                    <path d="M28 50 C28 53 36 53 36 50" stroke="#c85050" strokeWidth="2.5" strokeLinecap="round" />
+                                    {/* Ring arcs */}
+                                    <path d="M14 20 C10 26 10 34 14 40" stroke="#c85050" strokeWidth="2.5" strokeLinecap="round" />
+                                    <path d="M50 20 C54 26 54 34 50 40" stroke="#c85050" strokeWidth="2.5" strokeLinecap="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Instant Alerts</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Instant Alerts</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Intrusion & unauthorized parking detection.</span>
                         </div>
                         {/* AI Detection */}
@@ -181,7 +177,7 @@ export default function Home() {
                                     <circle cx="32" cy="28" r="2" fill="#5b9bc8" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>AI Detection</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>AI Detection</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Analyzes movements and unusual activity.</span>
                         </div>
                         {/* Smart Recognition */}
@@ -202,11 +198,11 @@ export default function Home() {
                                     <rect x="42" y="33" width="8" height="5" rx="1" stroke="#5b9bc8" strokeWidth="1.5" fill="none" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Smart Recognition</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Smart Recognition</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>People counting, vehicle & license plate tracking.</span>
                         </div>
                         {/* Traffic Insights */}
-                        <div style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem' }}>
+                        <div className="hide-on-mobile" style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem' }}>
                             <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(91,155,200,0.12)', border: '2px solid rgba(91,155,200,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
                                     {/* Bar chart */}
@@ -220,13 +216,13 @@ export default function Home() {
                                     <path d="M15 46 Q31 36 47 24" stroke="#5b9bc8" strokeWidth="1.8" fill="none" strokeLinecap="round" strokeDasharray="3 2" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Traffic Insights</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Traffic Insights</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Understand visitor flow in real time.</span>
                         </div>
                     </div>
                 </>
             ),
-            img: '/assets/ai camera.png'
+            img: '/assets/ai camera.webp'
         },
         {
             title: 'Intrusion Alarms',
@@ -248,24 +244,23 @@ export default function Home() {
                                     <path d="M28 22 Q32 18 36 22" stroke="#5b9bc8" strokeWidth="1.8" fill="none" strokeLinecap="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>AI Threat Detection</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>AI Threat Detection</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Identifies real threats instantly.</span>
                         </div>
                         {/* Smart Alerts */}
                         <div style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
                             <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(200,80,80,0.12)', border: '2px solid rgba(200,80,80,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
-                                    <path d="M16 38 Q16 18 32 18 Q48 18 48 38" stroke="#c85050" strokeWidth="2.5" fill="rgba(200,80,80,0.15)" strokeLinecap="round" />
-                                    <ellipse cx="32" cy="38" rx="16" ry="5" fill="#c85050" opacity="0.4" />
-                                    <line x1="32" y1="43" x2="32" y2="48" stroke="#c85050" strokeWidth="2.5" />
-                                    <line x1="27" y1="48" x2="37" y2="48" stroke="#c85050" strokeWidth="2.5" strokeLinecap="round" />
-                                    <line x1="20" y1="14" x2="17" y2="10" stroke="#c85050" strokeWidth="1.8" strokeLinecap="round" />
-                                    <line x1="44" y1="14" x2="47" y2="10" stroke="#c85050" strokeWidth="1.8" strokeLinecap="round" />
-                                    <line x1="14" y1="24" x2="10" y2="22" stroke="#c85050" strokeWidth="1.8" strokeLinecap="round" />
-                                    <line x1="50" y1="24" x2="54" y2="22" stroke="#c85050" strokeWidth="1.8" strokeLinecap="round" />
+                                    {/* Bell body */}
+                                    <path d="M32 16 C22 16 22 26 22 34 C22 42 16 46 16 46 L48 46 C48 46 42 42 42 34 C42 26 42 16 32 16 Z" stroke="#c85050" strokeWidth="2.5" fill="rgba(200,80,80,0.15)" strokeLinejoin="round" />
+                                    {/* Clapper */}
+                                    <path d="M28 50 C28 53 36 53 36 50" stroke="#c85050" strokeWidth="2.5" strokeLinecap="round" />
+                                    {/* Ring arcs */}
+                                    <path d="M14 20 C10 26 10 34 14 40" stroke="#c85050" strokeWidth="2.5" strokeLinecap="round" />
+                                    <path d="M50 20 C54 26 54 34 50 40" stroke="#c85050" strokeWidth="2.5" strokeLinecap="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Smart Alerts</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Smart Alerts</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Real-time notifications when danger appears.</span>
                         </div>
                         {/* False Alarm Reduction */}
@@ -286,7 +281,7 @@ export default function Home() {
                                     <line x1="28" y1="50" x2="22" y2="56" stroke="#5b9bc8" strokeWidth="2" strokeLinecap="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>False Alarm Reduction</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>False Alarm Reduction</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>AI filters harmless movements.</span>
                         </div>
                         {/* Live Verification */}
@@ -305,11 +300,11 @@ export default function Home() {
                                     <circle cx="10" cy="16" r="3" fill="#c85050" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Live Verification (IVaaS)</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Live Verification (IVaaS)</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>View live footage and respond immediately.</span>
                         </div>
                         {/* Proactive Security */}
-                        <div style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem' }}>
+                        <div className="hide-on-mobile" style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem' }}>
                             <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(91,155,200,0.12)', border: '2px solid rgba(91,155,200,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
                                     {/* Shield with lightning bolt */}
@@ -318,7 +313,7 @@ export default function Home() {
                                     <path d="M36 18 L28 34 L34 34 L28 50 L40 30 L34 30 Z" fill="#5b9bc8" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Proactive Security</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Proactive Security</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>A system that thinks before it reacts.</span>
                         </div>
                     </div>
@@ -327,7 +322,7 @@ export default function Home() {
                     </span>
                 </>
             ),
-            img: '/assets/intrusion alarm.png'
+            img: '/assets/intrusion alarm.webp'
         },
         {
             title: 'Multi-room Audio',
@@ -352,7 +347,7 @@ export default function Home() {
                                     <path d="M56 32 Q60 36 56 40" stroke="#5b9bc8" strokeWidth="1.8" fill="none" strokeLinecap="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Whole-Home Sound</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Whole-Home Sound</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Music in every room.</span>
                         </div>
                         {/* Sync or Stream */}
@@ -373,7 +368,7 @@ export default function Home() {
                                     <circle cx="34" cy="25" r="2.5" fill="#5b9bc8" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Sync or Stream</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Sync or Stream</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Play different or same music.</span>
                         </div>
                         {/* Smart Control */}
@@ -393,11 +388,11 @@ export default function Home() {
                                     <circle cx="56" cy="16" r="2.5" fill="#5b9bc8" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Smart Control</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Smart Control</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Use your phone to control it all.</span>
                         </div>
                         {/* Live Streaming */}
-                        <div style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
+                        <div className="hide-on-mobile" style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
                             <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(91,155,200,0.12)', border: '2px solid rgba(91,155,200,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
                                     {/* Phone */}
@@ -415,7 +410,7 @@ export default function Home() {
                                     <circle cx="54" cy="16" r="3.5" fill="#c85050" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Live Verification (IVaaS)</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Live Verification (IVaaS)</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>View live footage and respond immediately.</span>
                         </div>
                         {/* Seamless Listening */}
@@ -432,7 +427,7 @@ export default function Home() {
                                     <circle cx="34" cy="47" r="2.5" fill="#5b9bc8" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Seamless Listening</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Seamless Listening</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Enjoy music anywhere in your home.</span>
                         </div>
                     </div>
@@ -441,7 +436,7 @@ export default function Home() {
                     </span>
                 </>
             ),
-            img: '/assets/multiroomaudiosystem.png'
+            img: '/assets/multiroomaudiosystem.webp'
         },
         {
             title: 'Access Control',
@@ -469,7 +464,7 @@ export default function Home() {
                                     <line x1="20" y1="30" x2="44" y2="30" stroke="#5b9bc8" strokeWidth="1" opacity="0.4" strokeDasharray="2 2" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Face Recognition</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Face Recognition</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Touchless and instant authentication.</span>
                         </div>
                         {/* AI Identification */}
@@ -487,7 +482,7 @@ export default function Home() {
                                     <circle cx="32" cy="28" r="2" fill="#5b9bc8" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>AI Identification</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>AI Identification</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>High-accuracy user recognition.</span>
                         </div>
                         {/* Multi-Layer Security */}
@@ -502,7 +497,7 @@ export default function Home() {
                                     <path d="M26 34 L30 38 L38 28" stroke="#5b9bc8" strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Multi-Layer Security</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Multi-Layer Security</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>RFID · PIN · Biometric options.</span>
                         </div>
                         {/* Entry Logs */}
@@ -521,11 +516,11 @@ export default function Home() {
                                     <path d="M18 35 L20 37 L24 33" stroke="#5b9bc8" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Entry Logs</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Entry Logs</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Track every entry and exit.</span>
                         </div>
                         {/* Versatile Access */}
-                        <div style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem' }}>
+                        <div className="hide-on-mobile" style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem' }}>
                             <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(91,155,200,0.12)', border: '2px solid rgba(91,155,200,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
                                     {/* Door */}
@@ -539,7 +534,7 @@ export default function Home() {
                                     <path d="M44 18 L47 21 L52 14" stroke="#5b9bc8" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Versatile Access</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Versatile Access</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Ideal for offices, homes, and secure areas.</span>
                         </div>
                     </div>
@@ -548,7 +543,7 @@ export default function Home() {
                     </span>
                 </>
             ),
-            img: '/assets/access control.png'
+            img: '/assets/access control.webp'
         },
         {
             title: 'Digital Door Locks',
@@ -573,7 +568,7 @@ export default function Home() {
                                     <path d="M46 50 L54 50 L54 42" stroke="#5b9bc8" strokeWidth="2" fill="none" strokeLinecap="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Multiple Unlock</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Multiple Unlock</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Fingerprint, RFID, PIN, or Face Lock.</span>
                         </div>
                         {/* Video Doorbell */}
@@ -595,7 +590,7 @@ export default function Home() {
                                     <circle cx="46" cy="12" r="4" fill="#c85050" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Video Doorbell</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Video Doorbell</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Camera and screen — see who's at the door.</span>
                         </div>
                         {/* Auto-Locking */}
@@ -614,11 +609,11 @@ export default function Home() {
                                     <polyline points="48,24 50,24 50,20" stroke="#5b9bc8" strokeWidth="1.8" fill="none" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Auto-Locking</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Auto-Locking</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Auto-locking for peace of mind.</span>
                         </div>
                         {/* Battery Backup */}
-                        <div style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
+                        <div className="hide-on-mobile" style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
                             <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(91,155,200,0.12)', border: '2px solid rgba(91,155,200,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
                                     {/* Battery */}
@@ -631,7 +626,7 @@ export default function Home() {
                                     <path d="M34 20 L28 34 L32 34 L28 48 L38 30 L34 30 Z" fill="#5b9bc8" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Battery Backup</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Battery Backup</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Low battery indicators and emergency power.</span>
                         </div>
                         {/* Smart & Connected */}
@@ -649,7 +644,7 @@ export default function Home() {
                                     <circle cx="32" cy="20" r="2" fill="#5b9bc8" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Smart & Connected</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Smart & Connected</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Optional VDP and real-time visitor logs.</span>
                         </div>
                     </div>
@@ -658,7 +653,7 @@ export default function Home() {
                     </span>
                 </>
             ),
-            img: '/assets/doorlock.jpg'
+            img: '/assets/doorlock.webp'
         },
         {
             title: 'Gate Automation',
@@ -687,7 +682,7 @@ export default function Home() {
                                     <polyline points="33,29 36,32 33,35" stroke="#5b9bc8" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Automatic Entry</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Automatic Entry</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Gate opens smoothly as you arrive.</span>
                         </div>
                         {/* Multiple Access */}
@@ -707,7 +702,7 @@ export default function Home() {
                                     <path d="M43 21 Q46 23 49 21" stroke="#5b9bc8" strokeWidth="1.2" fill="none" strokeLinecap="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Multiple Access</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Multiple Access</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Face · Fingerprint RFID · QR · Password.</span>
                         </div>
                         {/* Remote Control */}
@@ -727,7 +722,7 @@ export default function Home() {
                                     <path d="M44 22 Q50 26 50 28 Q50 30 44 34" stroke="#5b9bc8" strokeWidth="1.5" fill="none" strokeLinecap="round" opacity="0.6" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Remote Control</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Remote Control</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>IoT & GSM access from anywhere.</span>
                         </div>
                         {/* Safety Protection */}
@@ -745,11 +740,11 @@ export default function Home() {
                                     <line x1="52" y1="28" x2="56" y2="32" stroke="#5b9bc8" strokeWidth="1.8" strokeLinecap="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Safety Protection</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Safety Protection</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Prevents accidents and unauthorized entry.</span>
                         </div>
                         {/* Power Backup */}
-                        <div style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem' }}>
+                        <div className="hide-on-mobile" style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem' }}>
                             <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(91,155,200,0.12)', border: '2px solid rgba(91,155,200,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
                                     {/* Clipboard/battery card */}
@@ -764,7 +759,7 @@ export default function Home() {
                                     <path d="M35 38 L29 48 L33 48 L29 58 L39 44 L35 44 Z" fill="#5b9bc8" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Power Backup</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Power Backup</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Operates even during power outages.</span>
                         </div>
                     </div>
@@ -773,7 +768,7 @@ export default function Home() {
                     </span>
                 </>
             ),
-            img: '/assets/gate automation.jpg'
+            img: '/assets/gate automation.webp'
         },
         {
             title: 'Video Door Phone',
@@ -802,7 +797,7 @@ export default function Home() {
                                     <circle cx="14" cy="23" r="3" fill="#c85050" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Live Video</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Live Video</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>See who is at your door anytime.</span>
                         </div>
                         {/* Two-Way Communication */}
@@ -821,7 +816,7 @@ export default function Home() {
                                     <circle cx="50" cy="14" r="1" fill="#5b9bc8" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Two-Way Communication</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Two-Way <span className="hide-on-mobile">Communication</span><span className="show-on-mobile-inline">Interaction</span></span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Talk with visitors instantly.</span>
                         </div>
                         {/* Remote Access */}
@@ -841,7 +836,7 @@ export default function Home() {
                                     <path d="M44 22 Q50 26 50 28 Q50 30 44 34" stroke="#5b9bc8" strokeWidth="1.5" fill="none" strokeLinecap="round" opacity="0.6" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Remote Access</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Remote Access</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Monitor and control from anywhere.</span>
                         </div>
                         {/* Smart Integration */}
@@ -863,11 +858,11 @@ export default function Home() {
                                     <path d="M11 36 Q11 30 17 30 Q23 30 23 36" stroke="#5b9bc8" strokeWidth="1.5" fill="none" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Smart Integration</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Smart Integration</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Works with intercoms, phones, and security systems.</span>
                         </div>
                         {/* SIP Technology */}
-                        <div style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem' }}>
+                        <div className="hide-on-mobile" style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem' }}>
                             <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(91,155,200,0.12)', border: '2px solid rgba(91,155,200,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
                                     {/* Globe */}
@@ -884,7 +879,7 @@ export default function Home() {
                                     <path d="M44 21 Q44 25 44 26" stroke="#5b9bc8" strokeWidth="2" strokeLinecap="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>SIP Technology</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>SIP Technology</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Crystal-clear audio video over IP networks.</span>
                         </div>
                     </div>
@@ -893,7 +888,7 @@ export default function Home() {
                     </span>
                 </>
             ),
-            img: '/assets/video door phone system.png'
+            img: '/assets/video door phone system.webp'
         },
         {
             title: 'Networking and Wi-Fi',
@@ -925,7 +920,7 @@ export default function Home() {
                                     <circle cx="32" cy="18" r="2" fill="#5b9bc8" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>High-Speed Performance</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>High-Speed Performance</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Ultra-fast network with seamless connectivity.</span>
                         </div>
                         {/* Advanced Security */}
@@ -942,11 +937,11 @@ export default function Home() {
                                     <path d="M28 46 L28 44 Q28 40 32 40 Q36 40 36 44 L36 46" stroke="#5b9bc8" strokeWidth="1.5" fill="none" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Advanced Security</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Advanced Security</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Enterprise-grade protection for your data.</span>
                         </div>
                         {/* Scalability */}
-                        <div style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
+                        <div className="hide-on-mobile" style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
                             <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(91,155,200,0.12)', border: '2px solid rgba(91,155,200,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
                                     {/* Phone/tablet */}
@@ -962,7 +957,7 @@ export default function Home() {
                                     <path d="M44 18 Q54 26 54 32 Q54 38 44 46" stroke="#5b9bc8" strokeWidth="1.5" fill="none" strokeLinecap="round" opacity="0.6" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Scalability</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Scalability</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Easily expand and adapt to growing needs.</span>
                         </div>
                         {/* Centralized Management */}
@@ -986,7 +981,7 @@ export default function Home() {
                                     <line x1="36" y1="46" x2="36" y2="52" stroke="#5b9bc8" strokeWidth="1.5" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Centralized Management</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Centralized Management</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Cloud-based control and real-time monitoring.</span>
                         </div>
                         {/* Reliable Wi-Fi */}
@@ -1010,7 +1005,7 @@ export default function Home() {
                                     <path d="M27 10 Q32 6 37 10" stroke="#5b9bc8" strokeWidth="1.5" fill="none" strokeLinecap="round" opacity="0.6" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Reliable Wi-Fi</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Reliable Wi-Fi</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Intelligent Wi-Fi 6 mesh system for unbeatable coverage.</span>
                         </div>
                     </div>
@@ -1019,7 +1014,7 @@ export default function Home() {
                     </span>
                 </>
             ),
-            img: '/assets/networking and wifi.png'
+            img: '/assets/networking and wifi.webp'
         },
         {
             title: 'Curtain Automation',
@@ -1052,7 +1047,7 @@ export default function Home() {
                                     <line x1="39" y1="38" x2="41" y2="38" stroke="#5b9bc8" strokeWidth="2" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Motorized Control</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Motorized Control</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Open and close with a button tap.</span>
                         </div>
                         {/* Remote Access */}
@@ -1072,7 +1067,7 @@ export default function Home() {
                                     <path d="M42 22 Q48 26 48 28 Q48 30 42 34" stroke="#5b9bc8" strokeWidth="1.5" fill="none" strokeLinecap="round" opacity="0.6" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Remote Access</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Remote Access</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Operate curtains and blinds remotely.</span>
                         </div>
                         {/* Manual Override */}
@@ -1088,11 +1083,11 @@ export default function Home() {
                                     <line x1="42" y1="8" x2="58" y2="8" stroke="#5b9bc8" strokeWidth="2.2" strokeLinecap="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Manual Override</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Manual Override</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Easy switch between manual and automated.</span>
                         </div>
                         {/* Safety Features */}
-                        <div style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
+                        <div className="hide-on-mobile" style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
                             <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(91,155,200,0.12)', border: '2px solid rgba(91,155,200,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
                                     {/* Shield */}
@@ -1104,7 +1099,7 @@ export default function Home() {
                                     <path d="M38 16 L34 26 L37 26 L33 36" stroke="#5b9bc8" strokeWidth="1.5" fill="none" strokeLinecap="round" opacity="0.5" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Safety Features</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Safety Features</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Overload protection for secure operation.</span>
                         </div>
                         {/* Automatic Stroke */}
@@ -1125,7 +1120,7 @@ export default function Home() {
                                     <path d="M48 17 Q52 30 48 44 Q52 56 56 44 Q60 30 56 17" stroke="#5b9bc8" strokeWidth="2" fill="rgba(91,155,200,0.1)" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Automatic Stroke</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Automatic Stroke</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Smooth motion and consistent alignment.</span>
                         </div>
                     </div>
@@ -1134,7 +1129,7 @@ export default function Home() {
                     </span>
                 </>
             ),
-            img: '/assets/curtain and blinds automation.png'
+            img: '/assets/curtain and blinds automation.webp'
         },
         {
             title: 'Shutter Automation',
@@ -1158,7 +1153,7 @@ export default function Home() {
                                     <line x1="54" y1="8" x2="54" y2="52" stroke="#5b9bc8" strokeWidth="1.5" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Smart Operation</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Smart Operation</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Open or close shutters effortlessly.</span>
                         </div>
                         {/* Remote Control */}
@@ -1175,7 +1170,7 @@ export default function Home() {
                                     <path d="M42 22 Q48 26 48 28 Q48 30 42 34" stroke="#5b9bc8" strokeWidth="1.5" fill="none" strokeLinecap="round" opacity="0.6" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Remote Control</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Remote Control</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Operate via WiFi, GSM, or key switch.</span>
                         </div>
                         {/* Safety Brake */}
@@ -1193,11 +1188,11 @@ export default function Home() {
                                     <line x1="51" y1="46" x2="55" y2="46" stroke="#5b9bc8" strokeWidth="2" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Safety Brake</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Safety Brake</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Prevents sudden shutter drops.</span>
                         </div>
                         {/* Security Alerts */}
-                        <div style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
+                        <div className="hide-on-mobile" style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
                             <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(200,80,80,0.12)', border: '2px solid rgba(200,80,80,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
                                     <rect x="18" y="44" width="28" height="8" rx="3" stroke="#c85050" strokeWidth="2.2" fill="rgba(200,80,80,0.2)" />
@@ -1209,7 +1204,7 @@ export default function Home() {
                                     <line x1="50" y1="38" x2="56" y2="36" stroke="#c85050" strokeWidth="1.8" strokeLinecap="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Security Alerts</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Security Alerts</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Flash alarm for unauthorized access.</span>
                         </div>
                         {/* Reliable Automation */}
@@ -1231,7 +1226,7 @@ export default function Home() {
                                     <line x1="38" y1="32" x2="38" y2="28" stroke="#5b9bc8" strokeWidth="2" strokeLinecap="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Reliable Automation</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Reliable Automation</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Smooth, secure, and stress-free control.</span>
                         </div>
                     </div>
@@ -1240,7 +1235,7 @@ export default function Home() {
                     </span>
                 </>
             ),
-            img: '/assets/smart shutter automation.png'
+            img: '/assets/smart shutter automation.webp'
         },
         {
             title: 'Boom Barrier',
@@ -1271,7 +1266,7 @@ export default function Home() {
                                     <circle cx="52" cy="51" r="3" stroke="#5b9bc8" strokeWidth="1.5" fill="none" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Automated Access</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Automated Access</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Smooth vehicle entry and exit.</span>
                         </div>
                         {/* Vehicle Detection */}
@@ -1291,11 +1286,11 @@ export default function Home() {
                                     <circle cx="52" cy="32" r="2.5" fill="#5b9bc8" opacity="0.6" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Vehicle Detection</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Vehicle Detection</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Loop detector for accurate sensing.</span>
                         </div>
                         {/* Safety Alerts */}
-                        <div style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
+                        <div className="hide-on-mobile" style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
                             <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(200,80,80,0.12)', border: '2px solid rgba(200,80,80,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
                                     {/* Alarm base */}
@@ -1310,7 +1305,7 @@ export default function Home() {
                                     <line x1="50" y1="38" x2="56" y2="36" stroke="#c85050" strokeWidth="1.8" strokeLinecap="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Safety Alerts</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Safety Alerts</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Flash lamps and signals for visibility.</span>
                         </div>
                         {/* Multiple Controls */}
@@ -1331,7 +1326,7 @@ export default function Home() {
                                     <circle cx="56" cy="32" r="2" fill="#5b9bc8" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Multiple Controls</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Multiple Controls</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Key switch, push button, or remote.</span>
                         </div>
                         {/* Wide Applications */}
@@ -1356,7 +1351,7 @@ export default function Home() {
                                     <line x1="6" y1="56" x2="58" y2="56" stroke="#5b9bc8" strokeWidth="2" strokeLinecap="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Wide Applications</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Wide Applications</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Perfect for parking, tolls, and gated areas.</span>
                         </div>
                     </div>
@@ -1365,7 +1360,7 @@ export default function Home() {
                     </span>
                 </>
             ),
-            img: '/assets/automatic boom barrier.png'
+            img: '/assets/automatic boom barrier.webp'
         },
         {
             title: 'Sprinkler Automation',
@@ -1394,7 +1389,7 @@ export default function Home() {
                                     <path d="M50 30 Q50 22 54 22 Q58 22 58 30 Q58 36 54 38 Q50 36 50 30 Z" stroke="#5b9bc8" strokeWidth="1.8" fill="rgba(91,155,200,0.2)" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Smart Scheduling</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Smart Scheduling</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Automate watering with set timings.</span>
                         </div>
                         {/* Weather Based */}
@@ -1414,7 +1409,7 @@ export default function Home() {
                                     <line x1="36" y1="46" x2="34" y2="54" stroke="#5b9bc8" strokeWidth="2" strokeLinecap="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Weather Based</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Weather Based</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Adjusts watering based on forecast.</span>
                         </div>
                         {/* Soil Moisture Sensors */}
@@ -1432,7 +1427,7 @@ export default function Home() {
                                     <path d="M50 52 Q44 46 38 50" stroke="#5b9bc8" strokeWidth="1.5" fill="none" strokeLinecap="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Soil Moisture Sensors</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Soil Moisture Sensors</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Optimizes usage, prevents overwatering.</span>
                         </div>
                         {/* Remote Control */}
@@ -1452,11 +1447,11 @@ export default function Home() {
                                     <path d="M42 22 Q48 26 48 28 Q48 30 42 34" stroke="#5b9bc8" strokeWidth="1.5" fill="none" strokeLinecap="round" opacity="0.6" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Remote Control</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Remote Control</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Manage your sprinklers via mobile.</span>
                         </div>
                         {/* Water Conservation */}
-                        <div style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem' }}>
+                        <div className="hide-on-mobile" style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem' }}>
                             <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(91,155,200,0.12)', border: '2px solid rgba(91,155,200,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
                                     {/* Water drop */}
@@ -1468,7 +1463,7 @@ export default function Home() {
                                     <path d="M26 36 L30 40 L38 30" stroke="#5b9bc8" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: '#5b9bc8', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Water Conservation</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Water Conservation</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Efficient use for lush, healthy landscapes.</span>
                         </div>
                     </div>
@@ -1477,7 +1472,7 @@ export default function Home() {
                     </span>
                 </>
             ),
-            img: '/assets/sprinkler automation.png'
+            img: '/assets/sprinkler automation.webp'
         }
     ];
 
@@ -1486,7 +1481,7 @@ export default function Home() {
             {/* 1. HERO SECTION */}
             <section id="home" className="hero">
                 <div className="hero-bg-wrapper">
-                    <img src="/assets/smarthome.jpg" alt="Luxury Automation" className="hero-bg-img" />
+                    <img src="/assets/smarthome.webp" alt="Luxury Automation" className="hero-bg-img" loading="eager" fetchPriority="high" decoding="sync" />
                     <div className="hero-bg-overlay"></div>
                 </div>
 
@@ -1648,9 +1643,12 @@ export default function Home() {
                                         <div className="service-text">
                                             <h3 className={`title-medium text-white ${srv.title === 'Networking and Wi-Fi' ? 'networking-title' : ''}`}>{srv.title}</h3>
                                             <div className="accent-line"></div>
+                                            <div className="service-image-wrap mobile-only" style={{ marginTop: '2rem', width: '100%', aspectRatio: '16/9' }}>
+                                                <ParallaxImage src={srv.img} alt={srv.title} parallaxOffset={8} />
+                                            </div>
                                             <p className="text-body max-w-lg mt-4">{srv.desc}</p>
                                         </div>
-                                        <div className="service-image-wrap">
+                                        <div className="service-image-wrap desktop-only">
                                             <ParallaxImage src={srv.img} alt={srv.title} parallaxOffset={8} />
                                         </div>
                                     </FadeIn>
@@ -1671,24 +1669,24 @@ export default function Home() {
                 <div className="marquee-container mt-6">
                     <div className="marquee-track">
                         {[
-                            'abb.png', 'ajax.png', 'bosch.png', 'cisco.png', 'dlink.png', 'eglu.png', 'ezviz.png', 'fibaro.png',
-                            'fortinet.png', 'hikvision.png', 'hogar.png', 'knx.png', 'legrand.png', 'netgear.png', 'panasonic.png',
-                            'samsung.png', 'schneiderelectric.png', 'somfy.png', 'sophos.png', 'tenda.png', 'tplink.png', 'tuya.png',
-                            'tyco.png', 'yalen.png'
+                            'abb.webp', 'ajax.webp', 'bosch.webp', 'cisco.webp', 'dlink.webp', 'eglu.webp', 'ezviz.webp', 'fibaro.webp',
+                            'fortinet.webp', 'hikvision.webp', 'hogar.webp', 'knx.webp', 'legrand.webp', 'netgear.webp', 'panasonic.webp',
+                            'samsung.webp', 'schneiderelectric.webp', 'somfy.webp', 'sophos.webp', 'tenda.webp', 'tplink.webp', 'tuya.webp',
+                            'tyco.webp', 'yalen.webp'
                         ].map((logo, idx) => (
                             <div key={idx} className="brand-logo-wrap">
-                                <img src={`/logo/${logo}`} alt="Brand Logo" loading="lazy" />
+                                <img src={`/logo/${logo}`} alt="Brand Logo" loading="lazy" decoding="async" />
                             </div>
                         ))}
                         {/* Duplicate for infinite effect */}
                         {[
-                            'abb.png', 'ajax.png', 'bosch.png', 'cisco.png', 'dlink.png', 'eglu.png', 'ezviz.png', 'fibaro.png',
-                            'fortinet.png', 'hikvision.png', 'hogar.png', 'knx.png', 'legrand.png', 'netgear.png', 'panasonic.png',
-                            'samsung.png', 'schneiderelectric.png', 'somfy.png', 'sophos.png', 'tenda.png', 'tplink.png', 'tuya.png',
-                            'tyco.png', 'yalen.png'
+                            'abb.webp', 'ajax.webp', 'bosch.webp', 'cisco.webp', 'dlink.webp', 'eglu.webp', 'ezviz.webp', 'fibaro.webp',
+                            'fortinet.webp', 'hikvision.webp', 'hogar.webp', 'knx.webp', 'legrand.webp', 'netgear.webp', 'panasonic.webp',
+                            'samsung.webp', 'schneiderelectric.webp', 'somfy.webp', 'sophos.webp', 'tenda.webp', 'tplink.webp', 'tuya.webp',
+                            'tyco.webp', 'yalen.webp'
                         ].map((logo, idx) => (
                             <div key={`dup-${idx}`} className="brand-logo-wrap">
-                                <img src={`/logo/${logo}`} alt="Brand Logo" loading="lazy" />
+                                <img src={`/logo/${logo}`} alt="Brand Logo" loading="lazy" decoding="async" />
                             </div>
                         ))}
                     </div>
@@ -1742,32 +1740,32 @@ export default function Home() {
                 </div>
                 <div className="logo-grid mt-6">
                     {[
-                        'adani.png', 'ajion.png', 'aps.jpg', 'arabiann.jpg', 'asianet.png', 'cabriotn.png', 'cmc.jpg', 'co-operative.png', 'emin.png', 'farook.png', 'fincare.png', 'hp.png', 'icici.png', 'kaalyn.png', 'karadan.png', 'kdch.jpg', 'kevabox.jpg', 'ksebn.png', 'kurikkaln.png', 'lipin.png', 'lulu.png', 'm-dit.png', 'meraldan.png', 'minar.png', 'nayara.png', 'peekeyn.png', 'preethi.jpg', 'rg.png', 'safi.png', 'tc-onen.png', 'tec.png', 'the raviz.png', 'theaddress.jpg', 'xylem.jpg', 'yashn.png', 'sbin.png'
+                        'adani.webp', 'ajion.webp', 'aps.webp', 'arabiann.webp', 'asianet.webp', 'cabriotn.webp', 'cmc.webp', 'co-operative.webp', 'emin.webp', 'farook.webp', 'fincare.webp', 'hp.webp', 'icici.webp', 'kaalyn.webp', 'karadan.webp', 'kdch.webp', 'kevabox.webp', 'ksebn.webp', 'kurikkaln.png', 'lipin.webp', 'lulu.webp', 'm-dit.webp', 'meraldan.webp', 'minar.webp', 'nayara.webp', 'peekeyn.webp', 'preethi.jpg', 'rg.webp', 'safi.webp', 'tc-onen.webp', 'tec.webp', 'the raviz.webp', 'theaddress.webp', 'xylem.webp', 'yashn.webp', 'sbin.webp'
                     ].map((logo, idx) => (
                         <div key={idx} className="brand-logo-wrap leader-card">
-                                <img
-                                    src={`/leaders/${logo}`}
-                                    alt="Industry Leader"
-                                    loading="lazy"
-                                    className={logo === 'cabriotn.png' ? 'cabriotn-logo' : ''}
-                                    style={
-                                        logo === 'kurikkaln.png' ? { transform: 'scale(1.7)' } :
-                                            logo === 'lipin.png' ? { transform: 'scale(1.8)' } :
-                                                logo === 'yashn.png' ? { transform: 'scale(1.9)' } :
-                                                    logo === 'peekeyn.png' ? { transform: 'scale(1.9)' } :
-                                                        logo === 'preethi.jpg' ? { transform: 'scale(1.6)' } :
-                                                            logo === 'rg.png' ? { transform: 'scale(1.5)' } :
-                                                                logo === 'safi.png' ? { transform: 'scale(1.5)' } :
-                                                                    logo === 'icici.png' ? { transform: 'scale(1.5)' } :
-                                                                        logo === 'emin.png' ? { transform: 'scale(1.5)' } :
-                                                                            logo === 'co-operative.png' ? { transform: 'scale(1.5)' } :
-                                                                                logo === 'farook.png' ? { transform: 'scale(1.5)' } :
-                                                                                    logo === 'fincare.png' ? { transform: 'scale(1.5)' } :
-                                                                                        logo === 'asianet.png' ? { transform: 'scale(1.5)' } :
-                                                                                            logo === 'karadan.png' ? { transform: 'scale(1.5)' } :
-                                                                                                undefined
-                                    }
-                                />
+                            <img
+                                src={`/leaders/${logo}`}
+                                alt="Industry Leader"
+                                loading="lazy"
+                                className={logo === 'cabriotn.webp' ? 'cabriotn-logo' : ''}
+                                style={
+                                    logo === 'kurikkaln.png' ? { transform: 'scale(1.2)' } :
+                                        logo === 'lipin.webp' ? { transform: 'scale(1.8)' } :
+                                            logo === 'yashn.webp' ? { transform: 'scale(1.9)' } :
+                                                logo === 'peekeyn.webp' ? { transform: 'scale(1.9)' } :
+                                                    logo === 'preethi.jpg' ? { transform: 'scale(1.6)' } :
+                                                        logo === 'rg.webp' ? { transform: 'scale(1.5)' } :
+                                                            logo === 'safi.webp' ? { transform: 'scale(1.5)' } :
+                                                                logo === 'icici.webp' ? { transform: 'scale(1.5)' } :
+                                                                    logo === 'emin.webp' ? { transform: 'scale(1.5)' } :
+                                                                        logo === 'co-operative.webp' ? { transform: 'scale(1.5)' } :
+                                                                            logo === 'farook.webp' ? { transform: 'scale(1.5)' } :
+                                                                                logo === 'fincare.webp' ? { transform: 'scale(1.5)' } :
+                                                                                    logo === 'asianet.webp' ? { transform: 'scale(1.5)' } :
+                                                                                        logo === 'karadan.webp' ? { transform: 'scale(1.5)' } :
+                                                                                            undefined
+                                }
+                            />
                         </div>
                     ))}
                 </div>

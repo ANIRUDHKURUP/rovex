@@ -41,7 +41,7 @@ export default function Navbar() {
             <nav className="navbar">
                 <div className="nav-container">
                     <a href="#home" onClick={(e) => { e.preventDefault(); scrollTo('home'); }} className="nav-logo">
-                        <img src="/assets/whitelogo.png" alt="Rovex Automation" className="nav-logo-img" />
+                        <img src="/assets/whitelogo.webp" alt="Rovex Automation" className="nav-logo-img" width="140" height="40" />
                     </a>
 
                     <div className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>

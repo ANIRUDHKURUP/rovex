@@ -15,7 +15,7 @@ const reviewsData = [
     },
     {
         id: 2,
-        text: "Home Automation, Hotel Automation, Gate Automation, Curtain Automation,",
+        text: "Home Automation, Hotel Automation, Gate Automation, Curtain Automation etc are provided here.",
         author: "Danish KT",
         role: "Client",
         initials: "DK",
@@ -24,7 +24,7 @@ const reviewsData = [
     },
     {
         id: 3,
-        text: "Best home automation company",
+        text: "Rovex completely transformed our home into a smart living space. The installation was smooth and the system works flawlessly. Highly professional team.",
         author: "Neema Shonithlal",
         role: "Client",
         initials: "NS",
@@ -51,7 +51,7 @@ const reviewsData = [
     },
     {
         id: 6,
-        text: "good service",
+        text: "The automation solutions from Rovex are reliable and easy to use. Everything from lighting to security is now just a tap away.",
         author: "Lijuraj Thuvassery",
         role: "Client",
         initials: "LT",
@@ -60,7 +60,7 @@ const reviewsData = [
     },
     {
         id: 7,
-        text: "Good work ..",
+        text: "Rovex brought a new level of convenience to our home. The automation system works perfectly and the support team is great.",
         author: "anand sasidharan",
         role: "Client",
         initials: "AS",
@@ -69,7 +69,8 @@ const reviewsData = [
     },
     {
         id: 8,
-        text: "Very professional execution and great service.",
+        text: "The team at Rovex was knowledgeable and very professional. They explained every feature clearly and installed the system perfectly. Our home now feels more secure and modern.",
+        mobileText: "The team Rovex was knowledgeable and very professional. They installed the system perfectly. Our home now feels more secure and modern.",
         author: "Safeer 07",
         role: "Client",
         initials: "S0",
@@ -78,7 +79,7 @@ const reviewsData = [
     },
     {
         id: 9,
-        text: "Premium quality work.",
+        text: "Professional, reliable, and innovative. Rovex provided a seamless smart automation experience for our office.",
         author: "Lpcowork Legacy",
         role: "Client",
         initials: "LL",
@@ -87,7 +88,7 @@ const reviewsData = [
     },
     {
         id: 10,
-        text: "Excellent products and great support.",
+        text: "Excellent service and attention to detail. Rovex delivered exactly what they promised and made our home smarter and safer.",
         author: "Sajin P",
         role: "Client",
         initials: "SP",
@@ -96,7 +97,7 @@ const reviewsData = [
     },
     {
         id: 11,
-        text: "Great experience with their automation systems.",
+        text: "We love the convenience Rovex brought to our home. Controlling everything from our phone is amazing.",
         author: "ATHUL Op",
         role: "Client",
         initials: "AO",
@@ -105,7 +106,8 @@ const reviewsData = [
     },
     {
         id: 12,
-        text: "Impressive service and response time.",
+        text: "Rovex delivered a reliable and well-designed automation setup for our property. The quality of work and attention to detail were impressive. We are very happy with the result.",
+        mobileText: "Rovex delivered a reliable automation setup for our property. The quality of work and attention to detail were impressive.",
         author: "Sarun K",
         role: "Client",
         initials: "SK",
@@ -114,7 +116,7 @@ const reviewsData = [
     },
     {
         id: 13,
-        text: "Great automation options.",
+        text: "From consultation to installation, the Rovex team was extremely supportive. The technology is impressive and very user-friendly.",
         author: "ajal k",
         role: "Client",
         initials: "AK",
@@ -123,7 +125,7 @@ const reviewsData = [
     },
     {
         id: 14,
-        text: "Reliable team and robust technology.",
+        text: "Our office security and access control system by Rovex works flawlessly. Highly recommended. Great technology and even better service.",
         author: "VivekAsend Vivekpp",
         role: "Client",
         initials: "VV",
@@ -132,7 +134,8 @@ const reviewsData = [
     },
     {
         id: 15,
-        text: "Very nice work overall.",
+        text: "From consultation to installation, Rovex handled everything efficiently. The automation system is simple to use and works exactly as promised. A great choice for smart living solutions.",
+        mobileText: "From consultation to installation, Rovex handled everything efficiently. They works exactly as promised.",
         author: "Dilsha Naduthodi",
         role: "Client",
         initials: "DN",
@@ -249,7 +252,14 @@ export default function Testimonials() {
                                         {"★★★★★"}
                                     </div>
                                     <p className="testimonial-text">
-                                        <i>{review.text}</i>
+                                        {'mobileText' in review ? (
+                                            <>
+                                                <i className="testimonial-text-desktop">{review.text}</i>
+                                                <i className="testimonial-text-mobile">{review.mobileText}</i>
+                                            </>
+                                        ) : (
+                                            <i>{review.text}</i>
+                                        )}
                                     </p>
                                     <div className="testimonial-author">
                                         <div

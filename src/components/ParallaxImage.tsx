@@ -5,22 +5,32 @@ interface ParallaxImageProps {
     src: string;
     alt: string;
     className?: string;
-    parallaxOffset?: number; // percentage movement, max 10%
+    parallaxOffset?: number;
+    priority?: boolean;
 }
 
-export default function ParallaxImage({ src, alt, className = '', parallaxOffset = 10 }: ParallaxImageProps) {
-    const ref = useRef(null);
+export default function ParallaxImage({
+    src,
+    alt,
+    className = '',
+    parallaxOffset = 10,
+    priority = false,
+}: ParallaxImageProps) {
+    const ref = useRef<HTMLDivElement>(null);
 
     const { scrollYProgress } = useScroll({
         target: ref,
-        offset: ["start end", "end start"]
+        offset: ['start end', 'end start'],
     });
 
-    // Calculate the y transform based on offset percentage
     const y = useTransform(scrollYProgress, [0, 1], [`-${parallaxOffset}%`, `${parallaxOffset}%`]);
 
     return (
-        <div ref={ref} style={{ overflow: 'hidden', height: '100%', width: '100%', position: 'relative' }} className={className}>
+        <div
+            ref={ref}
+            style={{ overflow: 'hidden', height: '100%', width: '100%', position: 'relative' }}
+            className={className}
+        >
             <motion.img
                 src={src}
                 alt={alt}
@@ -30,9 +40,12 @@ export default function ParallaxImage({ src, alt, className = '', parallaxOffset
                     width: '100%',
                     objectFit: 'cover',
                     position: 'absolute',
-                    top: `-${parallaxOffset}%`
+                    top: `-${parallaxOffset}%`,
+                    willChange: 'transform',
                 }}
-                loading="lazy"
+                loading={priority ? 'eager' : 'lazy'}
+                decoding="async"
+                fetchPriority={priority ? 'high' : 'low'}
             />
         </div>
     );

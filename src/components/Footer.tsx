@@ -1,4 +1,4 @@
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Instagram } from 'lucide-react';
 import './Footer.css';
 
 export default function Footer() {
@@ -45,6 +45,12 @@ export default function Footer() {
                 </div>
                 <div className="footer-bottom">
                     <p>&copy; {new Date().getFullYear()} Rovex Automation Ltd. All rights reserved.</p>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <span>meet the developers</span>
+                        <a href="https://www.instagram.com/intellex.web?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', color: 'inherit' }} aria-label="Meet the developers on Instagram">
+                            <Instagram size={18} />
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>

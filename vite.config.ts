@@ -13,10 +13,31 @@ export default defineConfig({
                     { name: 'preset-default', params: { overrides: { removeViewBox: false, cleanupIds: false } } }
                 ]
             },
-            png: { quality: 80, compressionLevel: 8 },
-            jpeg: { quality: 80 },
-            jpg: { quality: 80 },
-            webp: { lossless: true }
+            png: { quality: 82, compressionLevel: 9 },
+            jpeg: { quality: 82 },
+            jpg: { quality: 82 },
+            webp: { quality: 82, effort: 6 }
         })
     ],
+    build: {
+        // Target modern browsers for smaller bundles
+        target: 'es2020',
+        // Inline assets smaller than 4KB
+        assetsInlineLimit: 4096,
+        // Enable CSS code splitting
+        cssCodeSplit: true,
+        // Optimize chunk size
+        rollupOptions: {
+            output: {
+                // Split vendor chunks for better caching
+                manualChunks: {
+                    'react-vendor': ['react', 'react-dom'],
+                    'motion': ['framer-motion'],
+                    'router': ['react-router-dom'],
+                    'lenis': ['@studio-freight/lenis'],
+                    'icons': ['lucide-react'],
+                },
+            },
+        },
+    },
 });

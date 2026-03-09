@@ -2,19 +2,19 @@ import { useState, useEffect, useCallback } from 'react';
 import './PremiumCarousel.css';
 
 const items = [
-    { src: '/assets/smarthome.jpg', title: 'Smart Home Automation' },
-    { src: '/assets/ai camera.png', title: 'AI CCTV Camera' },
-    { src: '/assets/multiroomaudiosystem.png', title: 'Multiroom Audio' },
-    { src: '/assets/access control.png', title: 'Access Control' },
-    { src: '/assets/doorlock.jpg', title: 'Smart Door Lock' },
-    { src: '/assets/gate automation.jpg', title: 'Gate Automation' },
-    { src: '/assets/video door phone system.png', title: 'Video Door Phone' },
-    { src: '/assets/intrusion alarm.png', title: 'Intrusion Alarm' },
-    { src: '/assets/networking and wifi.png', title: 'Networking & WiFi' },
-    { src: '/assets/curtain and blinds automation.png', title: 'Curtain Automation' },
-    { src: '/assets/smart shutter automation.png', title: 'Shutter Automation' },
-    { src: '/assets/automatic boom barrier.png', title: 'Boom Barrier' },
-    { src: '/assets/sprinkler automation.png', title: 'Sprinkler Automation' }
+    { src: '/assets/smarthome.webp', title: 'Smart Home Automation' },
+    { src: '/assets/ai camera.webp', title: 'AI CCTV Camera' },
+    { src: '/assets/multiroomaudiosystem.webp', title: 'Multiroom Audio' },
+    { src: '/assets/access control.webp', title: 'Access Control' },
+    { src: '/assets/doorlock.webp', title: 'Smart Door Lock' },
+    { src: '/assets/gate automation.webp', title: 'Gate Automation' },
+    { src: '/assets/video door phone system.webp', title: 'Video Door Phone' },
+    { src: '/assets/intrusion alarm.webp', title: 'Intrusion Alarm' },
+    { src: '/assets/networking and wifi.webp', title: 'Networking & WiFi' },
+    { src: '/assets/curtain and blinds automation.webp', title: 'Curtain Automation' },
+    { src: '/assets/smart shutter automation.webp', title: 'Shutter Automation' },
+    { src: '/assets/automatic boom barrier.webp', title: 'Boom Barrier' },
+    { src: '/assets/sprinkler automation.webp', title: 'Sprinkler Automation' },
 ];
 
 export default function PremiumCarousel() {
@@ -94,7 +94,7 @@ export default function PremiumCarousel() {
                         onClick={() => setActiveIndex(index)}
                     >
                         <div className="premium-card-inner">
-                            <img src={item.src} alt={item.title} loading="lazy" />
+                            <img src={item.src} alt={item.title} loading="lazy" decoding="async" width="400" height="250" />
                             <div className="premium-card-title">{item.title}</div>
                         </div>
                     </div>

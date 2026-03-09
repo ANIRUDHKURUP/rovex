@@ -212,6 +212,23 @@
     letter-spacing: 0.2px;
 }
 
+.testimonial-text-desktop {
+    display: inline;
+}
+
+.testimonial-text-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .testimonial-text-desktop {
+        display: none;
+    }
+    .testimonial-text-mobile {
+        display: inline;
+    }
+}
+
 .testimonial-author {
     display: flex;
     align-items: center;

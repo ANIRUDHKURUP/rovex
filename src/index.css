@@ -1,4 +1,4 @@
-@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400,300&display=swap');
+/* Global performance: Satoshi loaded via HTML preconnect+link */
 
 :root {
   --bg-color: #0A0A0A;
@@ -23,6 +23,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Performance: Improve image rendering globally */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  image-rendering: auto;
 }
 
 body {

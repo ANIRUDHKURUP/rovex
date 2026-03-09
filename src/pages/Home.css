@@ -12,6 +12,10 @@
     overflow: hidden;
 }
 
+.show-on-mobile-inline {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .hero {
         padding-top: 110px;
@@ -20,6 +24,14 @@
     .hero-content {
         padding-top: 0 !important;
         margin-top: 40px;
+    }
+
+    .hide-on-mobile {
+        display: none !important;
+    }
+
+    .show-on-mobile-inline {
+        display: inline !important;
     }
 }
 
@@ -38,6 +50,9 @@
     height: 100%;
     object-fit: cover;
     animation: slowZoomIn 20s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    /* GPU-accelerate the zoom animation */
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .hero-bg-overlay {
@@ -627,6 +642,8 @@
     display: flex;
     align-items: center;
     gap: 6rem;
+    /* Isolate each service layer to prevent scroll-triggered repaints from bubbling */
+    contain: style;
 }
 
 .service-layer.reverse {
@@ -655,11 +672,22 @@
     border: 1px solid var(--border-color);
     overflow: hidden;
     border-radius: 12px;
+    /* Prevent layout recalculation from inner parallax */
+    contain: layout;
 }
 
-
+.mobile-only {
+    display: none !important;
+}
 
 @media (max-width: 900px) {
+    .mobile-only {
+        display: block !important;
+    }
+
+    .desktop-only {
+        display: none !important;
+    }
 
     .service-layer,
     .service-layer.reverse {
@@ -675,7 +703,7 @@
         white-space: nowrap;
         font-size: clamp(1.5rem, 7.5vw, 2.9rem);
     }
-
+    
     .service-image-wrap {
         width: 100%;
         aspect-ratio: 16/9;
@@ -943,31 +971,31 @@
         max-height: 80%;
     }
 
-    .brand-logo-wrap.leader-card img[src*="kurikkaln.png"] {
+    .brand-logo-wrap.leader-card img[src*="kurikkaln"] {
+        transform: scale(1.0) !important;
+    }
+
+    .brand-logo-wrap.leader-card img[src*="lipin"] {
         transform: scale(1.2) !important;
     }
 
-    .brand-logo-wrap.leader-card img[src*="lipin.png"] {
+    .brand-logo-wrap.leader-card img[src*="peekeyn"] {
         transform: scale(1.2) !important;
     }
 
-    .brand-logo-wrap.leader-card img[src*="peekeyn.png"] {
+    .brand-logo-wrap.leader-card img[src*="preethi"] {
+        transform: scale(1.0) !important;
+    }
+
+    .brand-logo-wrap.leader-card img[src*="tec"] {
         transform: scale(1.2) !important;
     }
 
-    .brand-logo-wrap.leader-card img[src*="preethi.jpg"] {
+    .brand-logo-wrap.leader-card img[src*="yashn"] {
         transform: scale(1.2) !important;
     }
 
-    .brand-logo-wrap.leader-card img[src*="tec.png"] {
-        transform: scale(1.2) !important;
-    }
-
-    .brand-logo-wrap.leader-card img[src*="yashn.png"] {
-        transform: scale(1.2) !important;
-    }
-
-    .brand-logo-wrap.leader-card img[src*="farook.png"] {
+    .brand-logo-wrap.leader-card img[src*="farook"] {
         transform: scale(1.2) !important;
     }
 }
