@@ -27,8 +27,8 @@ export default function Footer() {
                         </div>
                         <div className="footer-col" style={{ maxWidth: '280px' }}>
                             <h4>Contact</h4>
-                            <a href="mailto:consulting@rovex.com">consulting@rovex.com</a>
-                            <a href="tel:+919995008007">099950 08007</a>
+                            <a href="mailto:info@rovexautomation.com">info@rovexautomation.com</a>
+                            <a href="tel:+919995008007">+91 9995 008 007</a>
                             <a href="https://wa.me/919995008007" target="_blank" rel="noreferrer">WhatsApp <ArrowUpRight size={14} /></a>
                             <p style={{ marginTop: '1.5rem', color: '#a0a0a0', fontSize: '0.85rem', lineHeight: '1.6' }}>
                                 61/11564, Second Floor, Fathima Building<br />

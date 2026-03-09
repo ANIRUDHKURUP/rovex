@@ -15,10 +15,10 @@ const reviewsData = [
     },
     {
         id: 2,
-        text: "Home Automation, Hotel Automation, Gate Automation, Curtain Automation etc are provided here.",
-        author: "Danish KT",
+        text: "Rovex provides top-quality services with outstanding quality. The setup was clean, fast, and the system works flawlessly every day. Definitely a five-star service.⭐",
+        author: "Anirudh",
         role: "Client",
-        initials: "DK",
+        initials: "A",
         bgColor: "#004B7A",
         textColor: "white"
     },

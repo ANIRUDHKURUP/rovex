@@ -146,15 +146,15 @@ export default function Home() {
                         </div>
                         {/* Instant Alerts */}
                         <div style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
-                            <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(200,80,80,0.12)', border: '2px solid rgba(200,80,80,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
+                            <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(91,155,200,0.12)', border: '2px solid rgba(91,155,200,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
                                     {/* Bell body */}
-                                    <path d="M32 16 C22 16 22 26 22 34 C22 42 16 46 16 46 L48 46 C48 46 42 42 42 34 C42 26 42 16 32 16 Z" stroke="#c85050" strokeWidth="2.5" fill="rgba(200,80,80,0.15)" strokeLinejoin="round" />
+                                    <path d="M32 16 C22 16 22 26 22 34 C22 42 16 46 16 46 L48 46 C48 46 42 42 42 34 C42 26 42 16 32 16 Z" stroke="#5b9bc8" strokeWidth="2.5" fill="rgba(91,155,200,0.15)" strokeLinejoin="round" />
                                     {/* Clapper */}
-                                    <path d="M28 50 C28 53 36 53 36 50" stroke="#c85050" strokeWidth="2.5" strokeLinecap="round" />
+                                    <path d="M28 50 C28 53 36 53 36 50" stroke="#5b9bc8" strokeWidth="2.5" strokeLinecap="round" />
                                     {/* Ring arcs */}
-                                    <path d="M14 20 C10 26 10 34 14 40" stroke="#c85050" strokeWidth="2.5" strokeLinecap="round" />
-                                    <path d="M50 20 C54 26 54 34 50 40" stroke="#c85050" strokeWidth="2.5" strokeLinecap="round" />
+                                    <path d="M14 20 C10 26 10 34 14 40" stroke="#5b9bc8" strokeWidth="2.5" strokeLinecap="round" />
+                                    <path d="M50 20 C54 26 54 34 50 40" stroke="#5b9bc8" strokeWidth="2.5" strokeLinecap="round" />
                                 </svg>
                             </div>
                             <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Instant Alerts</span>
@@ -177,7 +177,7 @@ export default function Home() {
                                     <circle cx="32" cy="28" r="2" fill="#5b9bc8" />
                                 </svg>
                             </div>
-                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>AI Detection</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Ai Detection</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Analyzes movements and unusual activity.</span>
                         </div>
                         {/* Smart Recognition */}
@@ -244,20 +244,20 @@ export default function Home() {
                                     <path d="M28 22 Q32 18 36 22" stroke="#5b9bc8" strokeWidth="1.8" fill="none" strokeLinecap="round" />
                                 </svg>
                             </div>
-                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>AI Threat Detection</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Ai Threat Detection</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Identifies real threats instantly.</span>
                         </div>
                         {/* Smart Alerts */}
                         <div style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
-                            <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(200,80,80,0.12)', border: '2px solid rgba(200,80,80,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
+                            <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(91,155,200,0.12)', border: '2px solid rgba(91,155,200,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
                                     {/* Bell body */}
-                                    <path d="M32 16 C22 16 22 26 22 34 C22 42 16 46 16 46 L48 46 C48 46 42 42 42 34 C42 26 42 16 32 16 Z" stroke="#c85050" strokeWidth="2.5" fill="rgba(200,80,80,0.15)" strokeLinejoin="round" />
+                                    <path d="M32 16 C22 16 22 26 22 34 C22 42 16 46 16 46 L48 46 C48 46 42 42 42 34 C42 26 42 16 32 16 Z" stroke="#5b9bc8" strokeWidth="2.5" fill="rgba(91,155,200,0.15)" strokeLinejoin="round" />
                                     {/* Clapper */}
-                                    <path d="M28 50 C28 53 36 53 36 50" stroke="#c85050" strokeWidth="2.5" strokeLinecap="round" />
+                                    <path d="M28 50 C28 53 36 53 36 50" stroke="#5b9bc8" strokeWidth="2.5" strokeLinecap="round" />
                                     {/* Ring arcs */}
-                                    <path d="M14 20 C10 26 10 34 14 40" stroke="#c85050" strokeWidth="2.5" strokeLinecap="round" />
-                                    <path d="M50 20 C54 26 54 34 50 40" stroke="#c85050" strokeWidth="2.5" strokeLinecap="round" />
+                                    <path d="M14 20 C10 26 10 34 14 40" stroke="#5b9bc8" strokeWidth="2.5" strokeLinecap="round" />
+                                    <path d="M50 20 C54 26 54 34 50 40" stroke="#5b9bc8" strokeWidth="2.5" strokeLinecap="round" />
                                 </svg>
                             </div>
                             <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Smart Alerts</span>
@@ -297,7 +297,7 @@ export default function Home() {
                                     <circle cx="50" cy="22" r="5" stroke="#5b9bc8" strokeWidth="1.8" fill="none" />
                                     <path d="M43 38 Q43 30 50 30 Q57 30 57 38" stroke="#5b9bc8" strokeWidth="1.8" fill="none" />
                                     {/* Live dot */}
-                                    <circle cx="10" cy="16" r="3" fill="#c85050" />
+                                    <circle cx="10" cy="16" r="3" fill="#5b9bc8" />
                                 </svg>
                             </div>
                             <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Live Verification (IVaaS)</span>
@@ -407,7 +407,7 @@ export default function Home() {
                                     <path d="M34 22 Q40 26 40 32 Q40 38 34 42" stroke="#5b9bc8" strokeWidth="1.8" fill="none" strokeLinecap="round" />
                                     <path d="M38 18 Q48 24 48 32 Q48 40 38 46" stroke="#5b9bc8" strokeWidth="1.5" fill="none" strokeLinecap="round" opacity="0.6" />
                                     {/* Live dot */}
-                                    <circle cx="54" cy="16" r="3.5" fill="#c85050" />
+                                    <circle cx="54" cy="16" r="3.5" fill="#5b9bc8" />
                                 </svg>
                             </div>
                             <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Live Verification (IVaaS)</span>
@@ -482,7 +482,7 @@ export default function Home() {
                                     <circle cx="32" cy="28" r="2" fill="#5b9bc8" />
                                 </svg>
                             </div>
-                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>AI Identification</span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Ai detection</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>High-accuracy user recognition.</span>
                         </div>
                         {/* Multi-Layer Security */}
@@ -587,7 +587,7 @@ export default function Home() {
                                     {/* Camera dot top */}
                                     <circle cx="28" cy="14" r="2" fill="#5b9bc8" opacity="0.6" />
                                     {/* Live indicator */}
-                                    <circle cx="46" cy="12" r="4" fill="#c85050" />
+                                    <circle cx="46" cy="12" r="4" fill="#5b9bc8" />
                                 </svg>
                             </div>
                             <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Video Doorbell</span>
@@ -794,7 +794,7 @@ export default function Home() {
                                     <path d="M48 22 Q54 26 54 31 Q54 36 48 40" stroke="#5b9bc8" strokeWidth="1.8" fill="none" strokeLinecap="round" />
                                     <path d="M52 25 Q57 29 57 31 Q57 33 52 37" stroke="#5b9bc8" strokeWidth="1.3" fill="none" strokeLinecap="round" opacity="0.6" />
                                     {/* Live dot */}
-                                    <circle cx="14" cy="23" r="3" fill="#c85050" />
+                                    <circle cx="14" cy="23" r="3" fill="#5b9bc8" />
                                 </svg>
                             </div>
                             <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Live Video</span>
@@ -816,7 +816,7 @@ export default function Home() {
                                     <circle cx="50" cy="14" r="1" fill="#5b9bc8" />
                                 </svg>
                             </div>
-                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Two-Way <span className="hide-on-mobile">Communication</span><span className="show-on-mobile-inline">Interaction</span></span>
+                            <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Two-Way Interaction</span>
                             <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Talk with visitors instantly.</span>
                         </div>
                         {/* Remote Access */}
@@ -1193,15 +1193,15 @@ export default function Home() {
                         </div>
                         {/* Security Alerts */}
                         <div className="hide-on-mobile" style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
-                            <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(200,80,80,0.12)', border: '2px solid rgba(200,80,80,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
+                            <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(91,155,200,0.12)', border: '2px solid rgba(91,155,200,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
-                                    <rect x="18" y="44" width="28" height="8" rx="3" stroke="#c85050" strokeWidth="2.2" fill="rgba(200,80,80,0.2)" />
-                                    <path d="M16 44 Q16 26 32 26 Q48 26 48 44" stroke="#c85050" strokeWidth="2.5" fill="rgba(200,80,80,0.15)" strokeLinecap="round" />
-                                    <line x1="32" y1="22" x2="32" y2="16" stroke="#c85050" strokeWidth="2" strokeLinecap="round" />
-                                    <line x1="20" y1="28" x2="15" y2="23" stroke="#c85050" strokeWidth="1.8" strokeLinecap="round" />
-                                    <line x1="44" y1="28" x2="49" y2="23" stroke="#c85050" strokeWidth="1.8" strokeLinecap="round" />
-                                    <line x1="14" y1="38" x2="8" y2="36" stroke="#c85050" strokeWidth="1.8" strokeLinecap="round" />
-                                    <line x1="50" y1="38" x2="56" y2="36" stroke="#c85050" strokeWidth="1.8" strokeLinecap="round" />
+                                    <rect x="18" y="44" width="28" height="8" rx="3" stroke="#5b9bc8" strokeWidth="2.2" fill="rgba(91,155,200,0.2)" />
+                                    <path d="M16 44 Q16 26 32 26 Q48 26 48 44" stroke="#5b9bc8" strokeWidth="2.5" fill="rgba(91,155,200,0.15)" strokeLinecap="round" />
+                                    <line x1="32" y1="22" x2="32" y2="16" stroke="#5b9bc8" strokeWidth="2" strokeLinecap="round" />
+                                    <line x1="20" y1="28" x2="15" y2="23" stroke="#5b9bc8" strokeWidth="1.8" strokeLinecap="round" />
+                                    <line x1="44" y1="28" x2="49" y2="23" stroke="#5b9bc8" strokeWidth="1.8" strokeLinecap="round" />
+                                    <line x1="14" y1="38" x2="8" y2="36" stroke="#5b9bc8" strokeWidth="1.8" strokeLinecap="round" />
+                                    <line x1="50" y1="38" x2="56" y2="36" stroke="#5b9bc8" strokeWidth="1.8" strokeLinecap="round" />
                                 </svg>
                             </div>
                             <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Security Alerts</span>
@@ -1291,18 +1291,18 @@ export default function Home() {
                         </div>
                         {/* Safety Alerts */}
                         <div className="hide-on-mobile" style={{ flex: 1, minWidth: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '0 0.5rem', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
-                            <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(200,80,80,0.12)', border: '2px solid rgba(200,80,80,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
+                            <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(91,155,200,0.12)', border: '2px solid rgba(91,155,200,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
                                     {/* Alarm base */}
-                                    <rect x="18" y="44" width="28" height="8" rx="3" stroke="#c85050" strokeWidth="2.2" fill="rgba(200,80,80,0.2)" />
+                                    <rect x="18" y="44" width="28" height="8" rx="3" stroke="#5b9bc8" strokeWidth="2.2" fill="rgba(91,155,200,0.2)" />
                                     {/* Alarm dome */}
-                                    <path d="M16 44 Q16 26 32 26 Q48 26 48 44" stroke="#c85050" strokeWidth="2.5" fill="rgba(200,80,80,0.15)" strokeLinecap="round" />
+                                    <path d="M16 44 Q16 26 32 26 Q48 26 48 44" stroke="#5b9bc8" strokeWidth="2.5" fill="rgba(91,155,200,0.15)" strokeLinecap="round" />
                                     {/* Flash rays */}
-                                    <line x1="32" y1="22" x2="32" y2="16" stroke="#c85050" strokeWidth="2" strokeLinecap="round" />
-                                    <line x1="20" y1="28" x2="15" y2="23" stroke="#c85050" strokeWidth="1.8" strokeLinecap="round" />
-                                    <line x1="44" y1="28" x2="49" y2="23" stroke="#c85050" strokeWidth="1.8" strokeLinecap="round" />
-                                    <line x1="14" y1="38" x2="8" y2="36" stroke="#c85050" strokeWidth="1.8" strokeLinecap="round" />
-                                    <line x1="50" y1="38" x2="56" y2="36" stroke="#c85050" strokeWidth="1.8" strokeLinecap="round" />
+                                    <line x1="32" y1="22" x2="32" y2="16" stroke="#5b9bc8" strokeWidth="2" strokeLinecap="round" />
+                                    <line x1="20" y1="28" x2="15" y2="23" stroke="#5b9bc8" strokeWidth="1.8" strokeLinecap="round" />
+                                    <line x1="44" y1="28" x2="49" y2="23" stroke="#5b9bc8" strokeWidth="1.8" strokeLinecap="round" />
+                                    <line x1="14" y1="38" x2="8" y2="36" stroke="#5b9bc8" strokeWidth="1.8" strokeLinecap="round" />
+                                    <line x1="50" y1="38" x2="56" y2="36" stroke="#5b9bc8" strokeWidth="1.8" strokeLinecap="round" />
                                 </svg>
                             </div>
                             <span style={{ color: 'red', fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.3rem' }}>Safety Alerts</span>
@@ -1804,10 +1804,10 @@ export default function Home() {
                                         S K Pottekkat Road, Puthiyara Rd, Kasaba Village,<br />
                                         Kozhikode, Kerala 673004<br />
                                         <br />
-                                        <strong>Phone:</strong> 099950 08007
+                                        <strong>Phone:</strong> +91 9995 008 007
                                     </p>
                                     <p className="text-body" style={{ marginTop: '1.5rem' }}>
-                                        <a href="mailto:consulting@rovex.com" style={{ textDecoration: 'underline' }}>consulting@rovex.com</a>
+                                        <a href="mailto:info@rovexautomation.com" style={{ textDecoration: 'underline' }}>info@rovexautomation.com</a>
                                     </p>
                                 </div>
                             </FadeIn>
