@@ -1815,7 +1815,19 @@ export default function Home() {
 
                         <div className="contact-form-container">
                             <FadeIn delay={0.2}>
-                                <form className="minimal-form" onSubmit={(e) => e.preventDefault()}>
+                                <form className="minimal-form" onSubmit={(e) => {
+                                    e.preventDefault();
+                                    const form = e.target as HTMLFormElement;
+                                    const nameInput = form.querySelector('#name') as HTMLInputElement;
+                                    const emailInput = form.querySelector('#email') as HTMLInputElement;
+                                    const projectTextarea = form.querySelector('#project') as HTMLTextAreaElement;
+
+                                    if (nameInput && emailInput && projectTextarea) {
+                                        const message = `Name: ${nameInput.value}, Email: ${emailInput.value}, Details: ${projectTextarea.value}`;
+                                        const whatsappUrl = `https://wa.me/919995008007?text=${encodeURIComponent(message)}`;
+                                        window.open(whatsappUrl, '_blank');
+                                    }
+                                }}>
                                     <div className="form-group">
                                         <label htmlFor="name">Complete Name</label>
                                         <input type="text" id="name" placeholder="E.g., Jonathan Architect" required />
