@@ -37,7 +37,7 @@ export default function Home() {
 
     const servicesList = [
         {
-            title: 'Home Automation',
+            title: 'Building Automation',
             desc: (
                 <>
                     <span style={{ display: 'block', marginBottom: '1.5rem', color: 'var(--text-secondary)', fontStyle: 'normal' }}>
@@ -114,7 +114,7 @@ export default function Home() {
                     </div>
                 </>
             ),
-            img: '/assets/smarthome.webp'
+            img: '/assets/BuildingAutomation.png'
         },
         {
             title: 'Ai-CCTV System',
@@ -1801,7 +1801,7 @@ export default function Home() {
                                     <p className="text-body">
                                         Rovex Automation LLP.<br />
                                         61/11564, Second Floor, Fathima Building<br />
-                                        S K Pottekkat Road, Puthiyara Rd, Kasaba Village,<br />
+                                        S K Pottekkat Road, Puthiyara Rd,<br />
                                         Kozhikode, Kerala 673004<br />
                                         <br />
                                         <strong>Phone:</strong> +91 9995 008 007
