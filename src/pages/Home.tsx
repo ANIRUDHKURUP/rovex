@@ -12,7 +12,7 @@ export default function Home() {
 
     useEffect(() => {
         let animationId: number;
-        const scrollStep = 0.5;
+        const scrollStep = 1.5;
 
         const autoScroll = () => {
             if (tickerRef.current && !isInteracting.current) {
@@ -21,10 +21,19 @@ export default function Home() {
                 // On mobile devices where this element is visible, do the auto-scroll
                 if (window.innerWidth <= 768) {
                     el.scrollLeft += scrollStep;
-                    // The items are duplicated exactly once, so halfway is scrollWidth / 2
-                    // We need to account for slight rounding errors in measuring width
-                    if (el.scrollLeft >= el.scrollWidth / 2) {
-                        el.scrollLeft -= el.scrollWidth / 2;
+                    // Calculate the precise duplicate offset to ensure a perfectly smooth loop jump
+                    let resetDistance = el.scrollWidth / 2;
+                    const track = el.firstElementChild as HTMLElement;
+                    if (track && track.children.length === 26) {
+                        const firstItem = track.children[0] as HTMLElement;
+                        const firstDuplicatedItem = track.children[13] as HTMLElement;
+                        if (firstItem && firstDuplicatedItem) {
+                            resetDistance = firstDuplicatedItem.offsetLeft - firstItem.offsetLeft;
+                        }
+                    }
+
+                    if (el.scrollLeft >= resetDistance) {
+                        el.scrollLeft -= resetDistance;
                     }
                 }
             }
@@ -1549,19 +1558,7 @@ export default function Home() {
                 >
                     <div className="hero-services-track">
                         {([
-                            { label: 'Home Automation', id: 'service-home-automation' },
-                            { label: 'Ai-CCTV System', id: 'service-ai-cctv' },
-                            { label: 'Intrusion Alarms', id: 'service-intrusion-alarms' },
-                            { label: 'Access Control', id: 'service-access-control' },
-                            { label: 'Digital Door Locks', id: 'service-digital-door-locks' },
-                            { label: 'Video Door Phone', id: 'service-video-door-phone' },
-                            { label: 'Gate Automation', id: 'service-gate-automation' },
-                            { label: 'Networking & Wi-Fi', id: 'service-networking-wifi' },
-                            { label: 'Curtain Automation', id: 'service-curtain-automation' },
-                            { label: 'Shutter Automation', id: 'service-shutter-automation' },
-                            { label: 'Boom Barrier', id: 'service-boom-barrier' },
-                            { label: 'Sprinkler Automation', id: 'service-sprinkler-automation' },
-                            { label: 'Home Automation', id: 'service-home-automation' },
+                            { label: 'Building Automation', id: 'service-home-automation' },
                             { label: 'Ai-CCTV System', id: 'service-ai-cctv' },
                             { label: 'Intrusion Alarms', id: 'service-intrusion-alarms' },
                             { label: 'Multi-room Audio', id: 'service-multiroom-audio' },
@@ -1573,8 +1570,22 @@ export default function Home() {
                             { label: 'Curtain Automation', id: 'service-curtain-automation' },
                             { label: 'Shutter Automation', id: 'service-shutter-automation' },
                             { label: 'Boom Barrier', id: 'service-boom-barrier' },
-                            { label: 'Sprinkler Automation', id: 'service-sprinkler-automation' },
-                        ] as { label: string; id: string }[]).map((service, idx) => (
+                            { label: 'Sprinkler Automation', id: 'service-sprinkler-automation' }
+                        ].concat([
+                            { label: 'Building Automation', id: 'service-home-automation' },
+                            { label: 'Ai-CCTV System', id: 'service-ai-cctv' },
+                            { label: 'Intrusion Alarms', id: 'service-intrusion-alarms' },
+                            { label: 'Multi-room Audio', id: 'service-multiroom-audio' },
+                            { label: 'Access Control', id: 'service-access-control' },
+                            { label: 'Digital Door Locks', id: 'service-digital-door-locks' },
+                            { label: 'Video Door Phone', id: 'service-video-door-phone' },
+                            { label: 'Gate Automation', id: 'service-gate-automation' },
+                            { label: 'Networking & Wi-Fi', id: 'service-networking-wifi' },
+                            { label: 'Curtain Automation', id: 'service-curtain-automation' },
+                            { label: 'Shutter Automation', id: 'service-shutter-automation' },
+                            { label: 'Boom Barrier', id: 'service-boom-barrier' },
+                            { label: 'Sprinkler Automation', id: 'service-sprinkler-automation' }
+                        ])).map((service, idx) => (
                             <button
                                 key={idx}
                                 className="hero-services-item"
